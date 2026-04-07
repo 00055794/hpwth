@@ -1,0 +1,40 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Env secrets
+.env
+
+# Large training data (not needed at runtime)
+House_prices_KZ_data_preprocessed_wt_outliers_Nov2025.pkl
+segments_fine_heuristic_points.parquet
+segments_fine_heuristic_summary.csv
+
+# OSM shapefile binaries - too large for GitHub (>100MB), provide separately
+osm_shp/*.shp
+osm_shp/*.dbf
+
+# OSM shapefile directories and all extensions (never commit raw shapefiles)
+osm_shp/
+*.shx
+*.prj
+*.cpg
+
+# Old folder structure (replaced by flat root-level modules)
+app/
+services/
+
+# Local-only scripts folder is fine (no generated data to ignore)
+# data/distance_grid.parquet is intentionally TRACKED (pre-computed, ~10MB)
+# data/segment_code_map.json is intentionally TRACKED (after save_artifacts.py)

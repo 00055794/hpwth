@@ -1,0 +1,15 @@
+[
+  "ROOMS",
+  "LONGITUDE",
+  "LATITUDE",
+  "TOTAL_AREA",
+  "FLOOR",
+  "TOTAL_FLOORS",
+  "FURNITURE",
+  "CONDITION",
+  "CEILING",
+  "MATERIAL",
+  "YEAR",
+  "REGION_GRID",
+  "segment_code"
+]

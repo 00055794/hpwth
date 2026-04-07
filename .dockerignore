@@ -1,0 +1,30 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Git metadata (not needed inside container)
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Env secrets
+.env
+
+# Large training / reference data (mounted as volumes or excluded from image)
+House_prices_KZ_data_preprocessed_wt_outliers_Nov2025.pkl
+segments_fine_heuristic_points.parquet
+segments_fine_heuristic_summary.csv
+
+# Notebook
+*.ipynb
+.ipynb_checkpoints/

@@ -1,0 +1,319 @@
+/* ═══════════════════════════════════════════════════════════
+   KZ Real Estate Price Estimator  –  style.css
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --primary:       #1a3c6e;
+  --primary-dark:  #0f2548;
+  --primary-light: #2a5298;
+  --accent:        #f0a500;
+  --accent-light:  #ffd166;
+  --bg:            #f0f4f9;
+  --card-bg:       #ffffff;
+  --text:          #1a202c;
+  --text-muted:    #64748b;
+  --border:        #dde3ec;
+  --success:       #059669;
+  --error:         #dc2626;
+  --radius:        12px;
+  --radius-sm:     6px;
+  --shadow:        0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg:     0 8px 32px rgba(0, 0, 0, 0.14);
+}
+
+/* ─── Reset ──────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 15px; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* ─── Navbar ─────────────────────────────── */
+.navbar {
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 0.85rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.nav-icon { font-size: 1.4rem; }
+.nav-sub {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 400;
+}
+
+/* ─── App grid ───────────────────────────── */
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ─── Cards ──────────────────────────────── */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+.card-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--primary);
+  margin-bottom: 0.9rem;
+}
+
+/* ─── Map ────────────────────────────────── */
+#ymap {
+  height: 340px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: #e8eef4;
+  margin-bottom: 0.85rem;
+}
+
+/* Fallback when no API key */
+.map-fallback {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e8eef4;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--border);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-bottom: 0.85rem;
+  gap: 0.5rem;
+}
+
+/* ─── Coordinates row ────────────────────── */
+.coords-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+/* ─── Form helpers ───────────────────────── */
+.form-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.col-span-2 { grid-column: span 2; }
+
+.form-group label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+input[type="number"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  color: var(--text);
+  background: #fff;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  outline: none;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+input:focus, select:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.12);
+}
+
+/* ─── Predict button ─────────────────────── */
+.predict-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.18s, transform 0.1s, box-shadow 0.18s;
+  box-shadow: 0 3px 10px rgba(26,60,110,0.35);
+  margin-top: 0.25rem;
+}
+.predict-btn:hover  { background: var(--primary-light); box-shadow: 0 5px 18px rgba(26,60,110,0.45); }
+.predict-btn:active { transform: scale(0.99); }
+.predict-btn:disabled { background: #94a3b8; cursor: not-allowed; box-shadow: none; }
+
+/* ─── Placeholder card ───────────────────── */
+.placeholder-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 2px dashed var(--border);
+  color: var(--text-muted);
+}
+.placeholder-icon  { font-size: 3.5rem; margin-bottom: 1rem; }
+.placeholder-title { font-size: 1.05rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; }
+.placeholder-sub   { font-size: 0.88rem; }
+
+/* ─── Loading card ───────────────────────── */
+.loading-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+.spinner {
+  width: 52px;
+  height: 52px;
+  border: 5px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+  margin: 0 auto 1.25rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text { font-size: 0.98rem; color: var(--text-muted); font-weight: 500; }
+
+/* ─── Error card ─────────────────────────── */
+.error-card {
+  background: #fff5f5;
+  border: 1.5px solid #fecaca;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.error-icon { font-size: 1.5rem; }
+.error-msg  { color: var(--error); font-size: 0.92rem; font-weight: 500; }
+
+/* ─── Price card ─────────────────────────── */
+.price-card {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 2.25rem 2rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 28px rgba(26,60,110,0.35);
+}
+.price-label {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+.price-value {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.45rem;
+}
+.price-sqm {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+.price-meta {
+  font-size: 0.76rem;
+  opacity: 0.6;
+}
+
+/* ─── Info cards ─────────────────────────── */
+.info-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.4rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+.info-card-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--primary);
+  margin-bottom: 0.7rem;
+}
+.info-table    { display: flex; flex-direction: column; }
+.info-row {
+  display: flex;
+  align-items: center;
+  padding: 0.42rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+  gap: 0.5rem;
+}
+.info-row:last-child { border-bottom: none; }
+.info-icon  { font-size: 1rem; width: 1.6rem; text-align: center; flex-shrink: 0; }
+.info-label { flex: 1; color: var(--text-muted); min-width: 0; }
+.info-value { font-weight: 600; color: var(--text); white-space: nowrap; }
+
+/* value colour coding for distances */
+.val-near { color: var(--success); }
+.val-far  { color: var(--error); }
+
+/* ─── Utility ────────────────────────────── */
+.hidden { display: none !important; }
+
+/* ─── Responsive ─────────────────────────── */
+@media (max-width: 960px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .navbar { flex-direction: column; gap: 0.25rem; text-align: center; }
+}
+@media (max-width: 480px) {
+  .cols-4 { grid-template-columns: repeat(2, 1fr); }
+  .cols-3 { grid-template-columns: repeat(2, 1fr); }
+  .col-span-2 { grid-column: span 1; }
+  .price-value { font-size: 2rem; }
+}

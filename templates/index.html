@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KZ Real Estate Price Estimator</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════ HEADER ══════════════════════════════════ -->
+<header class="navbar">
+  <div class="nav-brand">
+    <span class="nav-icon">🏠</span>
+    KZ Real Estate Price Estimator
+  </div>
+  <div class="nav-sub">Neural Network · Kazakhstan · 2025</div>
+</header>
+
+<!-- ═══════════════════════════ MAIN ════════════════════════════════════ -->
+<div class="app-grid">
+
+  <!-- ─────────────── LEFT PANEL ─────────────── -->
+  <div class="left-panel">
+
+    <!-- MAP CARD -->
+    <div class="card">
+      <div class="card-title">📍 Pick Location on Map</div>
+      <div id="ymap"></div>
+      <div class="coords-row">
+        <div class="form-group">
+          <label for="LATITUDE">Latitude</label>
+          <input type="number" id="LATITUDE" step="0.000001" min="40" max="55"
+                 value="43.256700" onchange="onCoordsInput()" />
+        </div>
+        <div class="form-group">
+          <label for="LONGITUDE">Longitude</label>
+          <input type="number" id="LONGITUDE" step="0.000001" min="46" max="87"
+                 value="76.928600" onchange="onCoordsInput()" />
+        </div>
+      </div>
+    </div>
+
+    <!-- PROPERTY DETAILS CARD -->
+    <div class="card">
+      <div class="card-title">🏢 Property Details</div>
+
+      <!-- Row 1: Area & Rooms -->
+      <div class="form-grid cols-4">
+        <div class="form-group">
+          <label for="ROOMS">Rooms</label>
+          <input type="number" id="ROOMS" min="1" max="20" value="2" />
+        </div>
+        <div class="form-group col-span-2">
+          <label for="TOTAL_AREA">Total Area (m²)</label>
+          <input type="number" id="TOTAL_AREA" step="0.1" min="10" max="1000" value="62.0" />
+        </div>
+        <div class="form-group">
+          <label for="YEAR">Year Built</label>
+          <input type="number" id="YEAR" min="1900" max="2030" value="2015" />
+        </div>
+      </div>
+
+      <!-- Row 2: Floors & Ceiling -->
+      <div class="form-grid cols-4">
+        <div class="form-group">
+          <label for="FLOOR">Floor</label>
+          <input type="number" id="FLOOR" min="1" max="100" value="5" />
+        </div>
+        <div class="form-group">
+          <label for="TOTAL_FLOORS">Total Floors</label>
+          <input type="number" id="TOTAL_FLOORS" min="1" max="100" value="9" />
+        </div>
+        <div class="form-group col-span-2">
+          <label for="CEILING">Ceiling Height (m)</label>
+          <input type="number" id="CEILING" step="0.1" min="1.5" max="10" value="2.7" />
+        </div>
+      </div>
+
+      <!-- Row 3: Categorical selects -->
+      <div class="form-grid cols-3">
+        <div class="form-group">
+          <label for="MATERIAL">Wall Material</label>
+          <select id="MATERIAL">
+            <option value="1">Panel</option>
+            <option value="2">Brick</option>
+            <option value="3">Monolith</option>
+            <option value="4">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="FURNITURE">Furniture</label>
+          <select id="FURNITURE">
+            <option value="1">None</option>
+            <option value="2" selected>Partial</option>
+            <option value="3">Full</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="CONDITION">Condition</label>
+          <select id="CONDITION">
+            <option value="1">1 – Poor</option>
+            <option value="2">2 – Fair</option>
+            <option value="3" selected>3 – Good</option>
+            <option value="4">4 – Excellent</option>
+            <option value="5">5 – Perfect</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Predict button -->
+      <button id="predict-btn" class="predict-btn" onclick="runPredict()">
+        Estimate Price
+      </button>
+    </div>
+  </div><!-- /left-panel -->
+
+  <!-- ─────────────── RIGHT PANEL ─────────────── -->
+  <div class="right-panel">
+
+    <!-- Placeholder shown before first prediction -->
+    <div id="placeholder-card" class="placeholder-card">
+      <div class="placeholder-icon">🏡</div>
+      <div class="placeholder-title">Select a location and fill in the property details</div>
+      <div class="placeholder-sub">Click on the map or enter coordinates, then press <strong>Estimate Price</strong></div>
+    </div>
+
+    <!-- Spinner shown during request -->
+    <div id="loading-card" class="loading-card hidden">
+      <div class="spinner"></div>
+      <div class="loading-text">Calculating price …</div>
+    </div>
+
+    <!-- Error card -->
+    <div id="error-card" class="error-card hidden">
+      <div class="error-icon">⚠️</div>
+      <div id="error-msg" class="error-msg"></div>
+    </div>
+
+    <!-- Results shown after prediction -->
+    <div id="result-section" class="hidden">
+
+      <!-- Price card -->
+      <div class="price-card">
+        <div class="price-label">Estimated Market Price</div>
+        <div id="price-display" class="price-value">—</div>
+        <div id="price-sqm" class="price-sqm">—</div>
+        <div class="price-meta">
+          Region grid: <span id="region-code">—</span> &nbsp;|&nbsp;
+          Segment: <span id="segment-code">—</span>
+        </div>
+      </div>
+
+      <!-- OSM Distances -->
+      <div class="info-card">
+        <div class="info-card-title">📏 Proximity to Facilities</div>
+        <div id="distances-table" class="info-table"></div>
+      </div>
+
+      <!-- Regional Statistics -->
+      <div class="info-card">
+        <div class="info-card-title">📊 Regional Statistics</div>
+        <div id="stats-table" class="info-table"></div>
+      </div>
+
+    </div><!-- /result-section -->
+  </div><!-- /right-panel -->
+
+</div><!-- /app-grid -->
+
+<!-- ═══════════════════ YANDEX MAPS ════════════════════════════════════ -->
+{% if yandex_key %}
+<script src="https://api-maps.yandex.ru/2.1/?apikey={{ yandex_key }}&lang=en_RU"
+        type="text/javascript"></script>
+{% else %}
+<!-- No Yandex API key: fallback map disabled, coords entered manually -->
+<script>
+  // Provide a minimal ymaps stub so app.js loads without errors
+  window.ymaps = { ready: function(cb) { document.addEventListener('DOMContentLoaded', function(){ try{ cb(); }catch(e){} }); } };
+</script>
+{% endif %}
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

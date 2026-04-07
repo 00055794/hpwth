@@ -1,0 +1,33 @@
+{
+  "input_dim": 13,
+  "feature_names": [
+    "ROOMS",
+    "LONGITUDE",
+    "LATITUDE",
+    "TOTAL_AREA",
+    "FLOOR",
+    "TOTAL_FLOORS",
+    "FURNITURE",
+    "CONDITION",
+    "CEILING",
+    "MATERIAL",
+    "YEAR",
+    "REGION_GRID",
+    "segment_code"
+  ],
+  "target_column": "PRICE_ln",
+  "test_metrics": {
+    "mae": 0.14062692542382965,
+    "mse": 0.03809635793393805,
+    "rmse": 0.19518288330163086,
+    "r2": 0.9073263183993703,
+    "mape": 0.8279918558407479
+  },
+  "training_config": {
+    "epochs": 100,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "early_stopping_patience": 10,
+    "random_state": 0
+  }
+}
