@@ -15,19 +15,17 @@ A machine learning web application for predicting house prices in Kazakhstan usi
 
 ## Tech Stack
 - PyTorch neural network (64→16→1 architecture)
-- Streamlit for web interface
+- FastAPI + Uvicorn backend
+- Leaflet.js interactive maps (ESRI Satellite)
 - GeoPandas for spatial features
+- Docker for containerized deployment
 - 588,281 training samples with 13 features
 
-## Deployment
-Deployed on Streamlit Cloud: [Your App URL]
-
-## Local Development
+## Running with Docker
 ```bash
-pip install -r app/requirements.txt
-cd app
-streamlit run app_new.py
+docker-compose up --build
 ```
+App will be available at `http://localhost:8000`
 
 ## Data Sources
 - Region Grid: 4473 spatial cells for location encoding
