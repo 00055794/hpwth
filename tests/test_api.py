@@ -225,7 +225,7 @@ class TestBatch:
             "/batch",
             files={"file": ("garbage.csv", b"\x00\x01\x02", "text/csv")},
         )
-        assert resp.status_code in (400, 500)
+        assert resp.status_code == 400
 
 
 # ---------------------------------------------------------------------------
