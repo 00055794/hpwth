@@ -10,30 +10,51 @@ __pycache__/
 *.class
 *.so
 
-# Jupyter checkpoints
+# Jupyter notebooks
+*.ipynb
 .ipynb_checkpoints/
 
 # Env secrets
 .env
 
-# Large training data (not needed at runtime)
-House_prices_KZ_data_preprocessed_wt_outliers_Nov2025.pkl
-segments_fine_heuristic_points.parquet
-segments_fine_heuristic_summary.csv
+# Large training / raw data (not needed at runtime)
+*.pkl
+data2*.pkl
+House_prices_KZ_data_preprocessed_*.pkl
+in_01_FlatsData.xlsx
+krisha_parsed*.xlsx
 
-# OSM shapefile binaries - too large for GitHub (>100MB), provide separately
-osm_shp/*.shp
-osm_shp/*.dbf
-
-# OSM shapefile directories and all extensions (never commit raw shapefiles)
-osm_shp/
+# Shapefile extensions (raw geo source files not used by app)
 *.shx
 *.prj
 *.cpg
+*.dbf
+*.shp
+osm_shp/
+kz_regions_shp/
 
-# Old folder structure (replaced by flat root-level modules)
-app/
-services/
+# Geo artifacts / visualization outputs not needed by app
+segments_map.html
+hp_segments_points.parquet
+segments_fine_heuristic_points.parquet
+segments_fine_heuristic_summary.csv
+segments_fine_heuristic_polygons.geojson
+regions_enriched.*
+
+# Test / eval / audit output files
+batch_results*.json
+batch_results*.xlsx
+batch_test_*.xlsx
+batch_predictions_*.xlsx
+batch_input_*.xlsx
+batch_with_*.xlsx
+batch_prediction_template*.xlsx
+deep_audit_*.xlsx
+data2_*_fact_vs_pred.xlsx
+oct2025_fact_vs_pred.*
+batch_eval_plots.png
+audit_log.txt
+retrain_log.txt
 
 # data/distance_grid.parquet is tracked via Git LFS (186 MB binary)
 

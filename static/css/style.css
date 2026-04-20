@@ -1,6 +1,6 @@
-﻿/* в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ
-   KZ Real Estate Price Estimator  вЂ“  style.css  (dark theme)
-   в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ */
+﻿/* ─────────────────────────────────────────────────────────────
+   KZ Real Estate Price Estimator — style.css (dark theme)
+   ───────────────────────────────────────────────────────────── */
 
 :root {
   --bg:          #0e1117;
@@ -17,7 +17,6 @@
   --shadow:      0 2px 14px rgba(0, 0, 0, 0.45);
 }
 
-/* в”Ђв”Ђв”Ђ Reset в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 15px; }
 body {
@@ -27,7 +26,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
 }
-/* в”Ђв”Ђв”Ђ Header в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
+
 .app-header {
   padding: 1.1rem 2rem 0.85rem;
   border-bottom: 1px solid var(--border);
@@ -44,7 +43,6 @@ body {
   color: var(--text-muted);
 }
 
-/* в”Ђв”Ђв”Ђ Layout в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -54,7 +52,6 @@ body {
 }
 .col { min-width: 0; }
 
-/* в”Ђв”Ђв”Ђ Card в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .card {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -64,7 +61,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* в”Ђв”Ђв”Ђ Expander (details/summary) в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .expander {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -96,7 +92,6 @@ body {
 .expander[open] > summary::after { content: "\2212"; }
 .expander-body { padding: 0 1rem 1rem; }
 
-/* в”Ђв”Ђв”Ђ Maps в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 #single-map {
   height: 340px;
   border-radius: var(--radius-sm);
@@ -111,14 +106,7 @@ body {
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
-.cursor-pos {
-  font-size: 0.74rem;
-  color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
-  min-height: 1.1rem;
-}
 
-/* в”Ђв”Ђв”Ђ Form в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .form-2col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,7 +144,6 @@ input::-webkit-outer-spin-button { -webkit-appearance: none; }
 input:focus, select:focus { border-color: var(--accent); }
 select option { background: var(--input-bg); color: var(--text); }
 
-/* в”Ђв”Ђв”Ђ Buttons в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .btn-primary {
   background: var(--accent);
   color: #0a0f1a;
@@ -197,7 +184,6 @@ select option { background: var(--input-bg); color: var(--text); }
   margin-bottom: 1rem;
 }
 
-/* в”Ђв”Ђв”Ђ Upload zone в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .upload-card { padding: 0; }
 .upload-zone {
   display: flex;
@@ -217,7 +203,6 @@ select option { background: var(--input-bg); color: var(--text); }
 .upload-hint  { font-size: 0.77rem; color: var(--text-muted); }
 .upload-zone.uploading { border-color: var(--accent); opacity: 0.6; }
 
-/* в”Ђв”Ђв”Ђ Banners в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .success-banner {
   background: var(--accent-dim);
   border: 1px solid var(--accent);
@@ -239,7 +224,6 @@ select option { background: var(--input-bg); color: var(--text); }
   margin-bottom: 1rem;
 }
 
-/* в”Ђв”Ђв”Ђ Loading в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .loading-card {
   display: flex;
   align-items: center;
@@ -262,7 +246,6 @@ select option { background: var(--input-bg); color: var(--text); }
 @keyframes spin { to { transform: rotate(360deg); } }
 .loading-text { font-size: 0.86rem; color: var(--text-muted); }
 
-/* в”Ђв”Ђв”Ђ Tables в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
 .table-scroll {
   overflow-x: auto;
   margin-bottom: 1rem;
@@ -292,68 +275,15 @@ select option { background: var(--input-bg); color: var(--text); }
   color: var(--text);
 }
 .data-table tr:last-child td { border-bottom: none; }
-.data-table tr:nth-child(even) td { background: rgba(255,255,255,0.018); }
+.data-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.018); }
 
-/* в”Ђв”Ђв”Ђ Leaflet overrides (dark theme) в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
-.leaflet-control-attribution {
-  font-size: 8px !important;
-  opacity: 0.35 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  padding: 1px 3px !important;
-}
-.leaflet-control-attribution a { color: inherit !important; }
-
-.leaflet-container { background: #1a1e2e; }
-.leaflet-popup-content-wrapper {
+/* ── Leaflet dark overrides ──────────────────────────────────── */
+.leaflet-container {
   background: #1a1e2e;
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow);
-}
-.leaflet-popup-tip { background: #1a1e2e; }
-.leaflet-popup-content { font-size: 0.8rem; line-height: 1.65; }
-.map-popup .popup-price {
-  font-size: 0.97rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 0.3rem;
-}
-.leaflet-bar a,
-.leaflet-bar a:hover {
-  background: #1a1e2e;
-  color: var(--text);
-  border-color: var(--border);
-}
-.leaflet-control-geocoder-form input {
-  background: var(--input-bg);
-  color: var(--text);
-  border-color: var(--border);
-}
-.leaflet-control-geocoder {
-  background: #1a1e2e;
-  border-color: var(--border);
-}
-.lf-fs-btn {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  line-height: 26px;
-  width: 26px;
-  text-align: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-/* в”Ђв”Ђв”Ђ Utility в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
+/* --- Yandex Maps container background --- */
+.ymaps-2-1-79-map,
+.ymaps-2-1-79-map-bg { background: #1a1e2e; }
 .hidden { display: none !important; }
-
-/* в”Ђв”Ђв”Ђ Responsive в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ */
-@media (max-width: 900px) {
-  .two-col { grid-template-columns: 1fr; padding: 1rem; }
-}
-@media (max-width: 480px) {
-  .form-2col { grid-template-columns: 1fr; }
-  .btn-row   { grid-template-columns: 1fr; }
-}
-

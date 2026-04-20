@@ -10,39 +10,33 @@
 </head>
 <body>
 
-<!-- ══════════ HEADER ══════════ -->
 <header class="app-header">
   <div class="header-title">KZ Real Estate Price Estimator</div>
   <div class="header-caption">Predict apartment prices in KZT and view them on the map. Upload your file or use the form.</div>
 </header>
 
-<!-- ══════════ MAIN TWO-COLUMN GRID ══════════ -->
 <main class="two-col">
 
-  <!-- ════════ LEFT: Single Prediction ════════ -->
+  <!-- LEFT: Single Prediction -->
   <section class="col">
 
-    <!-- Map picker (collapsed by default) -->
     <details class="expander" id="map-expander">
       <summary>Map</summary>
       <div class="expander-body">
         <div id="single-map"></div>
-        <div class="cursor-pos" id="cursor-pos">Move cursor over map</div>
       </div>
     </details>
 
-    <!-- Input form -->
     <div class="card">
       <div class="form-2col">
 
-        <!-- Left sub-column -->
         <div class="sub-col">
           <div class="form-group">
             <label for="ROOMS">Rooms</label>
             <input type="number" id="ROOMS" min="1" max="10" value="2" />
           </div>
           <div class="form-group">
-            <label for="TOTAL_AREA">Area m²</label>
+            <label for="TOTAL_AREA">Area m2</label>
             <input type="number" id="TOTAL_AREA" step="0.1" min="10" max="1000" value="60" />
           </div>
           <div class="form-group">
@@ -53,13 +47,8 @@
             <label for="TOTAL_FLOORS">Total Floors</label>
             <input type="number" id="TOTAL_FLOORS" min="1" max="100" value="9" />
           </div>
-          <div class="form-group">
-            <label for="CEILING">Ceiling m</label>
-            <input type="number" id="CEILING" step="0.1" min="2.0" max="5.0" value="2.7" />
-          </div>
         </div>
 
-        <!-- Right sub-column -->
         <div class="sub-col">
           <div class="form-group">
             <label for="YEAR">Year</label>
@@ -68,33 +57,34 @@
           <div class="form-group">
             <label for="MATERIAL">Material</label>
             <select id="MATERIAL">
-              <option value="1" selected>Panel</option>
-              <option value="2">Brick</option>
-              <option value="3">Monolithic</option>
-              <option value="4">Mixed</option>
+              <option value="3" selected>Monolithic (монолитный)</option>
+              <option value="2">Panel (панельный)</option>
+              <option value="4">Brick (кирпичный)</option>
+              <option value="1">Other (иной)</option>
             </select>
           </div>
           <div class="form-group">
             <label for="FURNITURE">Furniture</label>
             <select id="FURNITURE">
-              <option value="1" selected>No</option>
+              <option value="1">No furniture</option>
               <option value="2">Partial</option>
-              <option value="3">Full</option>
+              <option value="3" selected>Full</option>
             </select>
           </div>
           <div class="form-group">
             <label for="CONDITION">Condition</label>
             <select id="CONDITION">
-              <option value="1">Needs renovation</option>
-              <option value="3" selected>Good</option>
-              <option value="5">Excellent</option>
+              <option value="1">Rough / Open plan (черновая)</option>
+              <option value="2">Needs renovation (требует)</option>
+              <option value="3">Neat / Average (аккуратный)</option>
+              <option value="4">Good (хорошее)</option>
+              <option value="5" selected>Fresh renovation (свежий)</option>
             </select>
           </div>
         </div>
 
-      </div><!-- /form-2col -->
+      </div>
 
-      <!-- Latitude / Longitude (full width) -->
       <div class="form-2col coords-row">
         <div class="form-group">
           <label for="LATITUDE">Latitude</label>
@@ -109,20 +99,17 @@
       <button id="predict-btn" class="btn-primary btn-full" onclick="runPredict()">
         Predict Price
       </button>
-    </div><!-- /card -->
+    </div>
 
-    <!-- Loading -->
     <div id="loading-card" class="loading-card hidden">
       <div class="spinner"></div>
       <span class="loading-text">Calculating...</span>
     </div>
 
-    <!-- Error -->
     <div id="error-card" class="error-card hidden">
       <span id="error-msg"></span>
     </div>
 
-    <!-- Prediction result -->
     <div id="result-section" class="hidden">
       <div class="success-banner" id="price-banner"></div>
       <details class="expander">
@@ -133,12 +120,11 @@
       </details>
     </div>
 
-  </section><!-- /left col -->
+  </section>
 
-  <!-- ════════ RIGHT: Batch Upload ════════ -->
+  <!-- RIGHT: Batch Upload -->
   <section class="col">
 
-    <!-- File uploader -->
     <div class="card upload-card">
       <label class="upload-zone" id="upload-zone">
         <div class="upload-title">Upload CSV / Excel</div>
@@ -147,19 +133,16 @@
       </label>
     </div>
 
-    <!-- Download buttons (always visible, disabled until batch runs) -->
     <div class="btn-row">
       <button id="dl-csv-btn" class="btn-secondary" disabled onclick="downloadCSV()">Download CSV</button>
       <button id="dl-xlsx-btn" class="btn-secondary" disabled onclick="downloadXLSX()">Download Excel</button>
     </div>
 
-    <!-- Batch loading -->
     <div id="batch-loading" class="loading-card hidden">
       <div class="spinner"></div>
       <span class="loading-text">Processing batch...</span>
     </div>
 
-    <!-- Batch results -->
     <div id="batch-results" class="hidden">
       <div class="success-banner" id="batch-banner"></div>
       <div class="table-scroll" id="batch-table-wrap"></div>
@@ -167,12 +150,10 @@
         <summary>View on Map</summary>
         <div class="expander-body">
           <div id="batch-map"></div>
-          <div class="cursor-pos" id="batch-cursor-pos">Move cursor over map</div>
         </div>
       </details>
     </div>
 
-    <!-- Template download -->
     <details class="expander">
       <summary>Download Template</summary>
       <div class="expander-body">
@@ -183,12 +164,12 @@
       </div>
     </details>
 
-  </section><!-- /right col -->
+  </section>
 
 </main>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-<script src="/static/js/app.js"></script>
+<script src="/static/js/app.js?v=2"></script>
 </body>
 </html>

@@ -1,10 +1,29 @@
 # ── Base image ────────────────────────────────────────────────────────────────
 FROM python:3.11-slim
 
+# ── Build-time proxy (for corporate networks) ─────────────────────────────────
+# Pass via: docker-compose build --build-arg HTTP_PROXY=http://user:pass@host:port
+# Or set HTTP_PROXY / HTTPS_PROXY in your .env file.
+ARG HTTP_PROXY
+ARG HTTPS_PROXY
+ARG NO_PROXY=localhost,127.0.0.1
+
+ENV http_proxy=${HTTP_PROXY} \
+    https_proxy=${HTTPS_PROXY} \
+    HTTP_PROXY=${HTTP_PROXY} \
+    HTTPS_PROXY=${HTTPS_PROXY} \
+    no_proxy=${NO_PROXY}
+
+# Write apt proxy config only when a proxy is supplied
+RUN if [ -n "$HTTP_PROXY" ]; then \
+        echo "Acquire::http::Proxy \"${HTTP_PROXY}\";"  > /etc/apt/apt.conf.d/01proxy && \
+        echo "Acquire::https::Proxy \"${HTTPS_PROXY}\";" >> /etc/apt/apt.conf.d/01proxy; \
+    fi
+
 WORKDIR /app
 
 # ── System dependencies for geospatial libraries ──────────────────────────────
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends --fix-missing \
         libgdal-dev \
         gdal-bin \
         libspatialindex-dev \
@@ -15,7 +34,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # ── Python dependencies ───────────────────────────────────────────────────────
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir \
+        --trusted-host pypi.org \
+        --trusted-host pypi.python.org \
+        --trusted-host files.pythonhosted.org \
+        --trusted-host download.pytorch.org \
+        -r requirements.txt
 
 # ── Application source ────────────────────────────────────────────────────────
 COPY main.py             ./

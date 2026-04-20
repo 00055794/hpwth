@@ -3,7 +3,7 @@ OSM distance lookup from pre-computed distance_grid.parquet.
 
 Replaces the slow on-the-fly KDTree over raw .shp files.
 At startup: loads data/distance_grid.parquet and builds a fast dict lookup.
-At query time: snaps (lat, lon) to nearest 0.01° grid cell → O(1) lookup.
+At query time: snaps (lat, lon) to nearest 0.01deg grid cell -> O(1) lookup.
 
 Run scripts/precompute_distances.py ONCE locally to generate the parquet file.
 """
@@ -32,20 +32,20 @@ class OSMDistances:
 
     def __init__(self, parquet_path: Path = DATA_DIR / "distance_grid.parquet"):
         if not Path(parquet_path).exists():
-            print(f"⚠️  {parquet_path} not found — distances will return NaN")
+            print(f"[WARN]️  {parquet_path} not found -- distances will return NaN")
             self._grid: dict = {}
             self._available = False
             return
 
         df = pd.read_parquet(parquet_path)
-        # Build dict: (lat_key, lon_key) → [d1, d2, d3, d4, d5, d6]
+        # Build dict: (lat_key, lon_key) -> [d1, d2, d3, d4, d5, d6]
         # lat_key / lon_key are integers = round(coord / GRID_STEP)
         arr = df[DISTANCE_COLS].values.astype(np.float32)
         lat_keys = np.round(df["lat_grid"].values / GRID_STEP).astype(np.int32)
         lon_keys = np.round(df["lon_grid"].values / GRID_STEP).astype(np.int32)
         self._grid = {(int(la), int(lo)): arr[i] for i, (la, lo) in enumerate(zip(lat_keys, lon_keys))}
         self._available = True
-        print(f"✔ OSMDistances: {len(self._grid):,} grid cells loaded from {parquet_path.name}")
+        print(f"[OK] OSMDistances: {len(self._grid):,} grid cells loaded from {parquet_path.name}")
 
     def get_distances(self, lat: float, lon: float) -> dict:
         """

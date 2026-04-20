@@ -1,5 +1,5 @@
 """
-Region grid lookup: maps (lat, lon) → REGION_GRID integer code.
+Region grid lookup: maps (lat, lon) -> REGION_GRID integer code.
 Reads from data/region_grid_lookup.json and data/region_grid_encoder.json.
 """
 import json
@@ -9,7 +9,7 @@ DATA_DIR = Path(__file__).resolve().parent / "data"
 
 
 class RegionGrid:
-    """Snaps a coordinate to a 0.01° grid cell and returns an integer region code."""
+    """Snaps a coordinate to a 0.01deg grid cell and returns an integer region code."""
 
     GRID_STEP = 0.01
 
@@ -24,7 +24,7 @@ class RegionGrid:
         with open(encoder_path, "r", encoding="utf-8") as f:
             self._encoder: dict = json.load(f)
 
-        print(f"✔ RegionGrid: {len(self._lookup)} cells, {len(self._encoder)} regions")
+        print(f"[OK] RegionGrid: {len(self._lookup)} cells, {len(self._encoder)} regions")
 
     def get_code(self, lat: float, lon: float) -> int:
         """

@@ -14,6 +14,7 @@ pyarrow>=14.0.0          # parquet (distance_grid.parquet)
 # ── Machine learning ──────────────────────────────────────────────────────────
 scikit-learn>=1.3.0
 joblib>=1.3.0
+lightgbm>=4.0.0
 
 # ── PyTorch (CPU-only – much smaller image) ───────────────────────────────────
 --extra-index-url https://download.pytorch.org/whl/cpu

@@ -1,0 +1,3191 @@
+{
+  "city_to_int": {
+    "Abay": 0,
+    "Agadyry": 1,
+    "Ahmet": 2,
+    "Ahmirovo": 3,
+    "Akaral": 4,
+    "Akbastau": 5,
+    "Akbulak": 6,
+    "Akbulym": 7,
+    "Akkistau": 8,
+    "Akkoly": 9,
+    "Akkoly_(svhz_Kokchetavskiy)": 10,
+    "Akmol": 11,
+    "Aksay": 12,
+    "Akshi": 13,
+    "Akshukur": 14,
+    "Aksu": 15,
+    "Aksukent": 16,
+    "Aktas": 17,
+    "Aktau": 18,
+    "Aktobe": 19,
+    "Alatau": 20,
+    "Aldabergenovo_": 21,
+    "Alekseevka": 22,
+    "Alga": 23,
+    "Almaly": 24,
+    "Almalybak_(KIZ)": 25,
+    "Almalyk": 26,
+    "Almaty": 27,
+    "Altay": 28,
+    "Altayskiy": 29,
+    "Altynsarino_(Kamystinskiy_rayon)": 30,
+    "Alyzhan": 31,
+    "Amankaragay": 32,
+    "Anar": 33,
+    "Andas_batyra": 34,
+    "Aralysk": 35,
+    "Arayly": 36,
+    "Arkalyk": 37,
+    "Arshaly": 38,
+    "Arysy": 39,
+    "Asa": 40,
+    "Asan": 41,
+    "Ashtibulak": 42,
+    "Askara_Tokpanova_(KazTsIK)": 43,
+    "Astana": 44,
+    "Astrahanka": 45,
+    "Asykata": 46,
+    "Atakent": 47,
+    "Atameken": 48,
+    "Atasu": 49,
+    "Atbasar": 50,
+    "Atyrau": 51,
+    "Auezov": 52,
+    "Auliekoly": 53,
+    "Avat": 54,
+    "Ayagoz": 55,
+    "Aysha-Bibi": 56,
+    "Azat": 57,
+    "Babatay": 58,
+    "Badamsha": 59,
+    "Bakanas": 60,
+    "Balhash": 61,
+    "Balkashino": 62,
+    "Balpyk_Bi": 63,
+    "Balykshy": 64,
+    "Batyr": 65,
+    "Bauyrzhan_Momyshuly": 66,
+    "Bayanaul": 67,
+    "Bayandy": 68,
+    "Baydibek_bi": 69,
+    "Baykent": 70,
+    "Baykonur": 71,
+    "Bayserke": 72,
+    "Bayterek": 73,
+    "Bayterek_(Novoalekseevka)": 74,
+    "Baytorysay": 75,
+    "Bekbolat": 76,
+    "Beloe": 77,
+    "Belousovka": 78,
+    "Belybulak_(Michurino)": 79,
+    "Bereke": 80,
+    "Besagash": 81,
+    "Beskaragay": 82,
+    "Beskaynar_(Gornyy_Sadovod)": 83,
+    "Bestamak": 84,
+    "Beybarys": 85,
+    "Beyneu": 86,
+    "Bishkuly": 87,
+    "Bobrovka": 88,
+    "Bolek": 89,
+    "Bolyshoy_Chagan": 90,
+    "Boralday": 91,
+    "Boralday_(Burunday)": 92,
+    "Boroduliha": 93,
+    "Borovskoy": 94,
+    "Botakara": 95,
+    "Bozaygyr": 96,
+    "Bulaevo": 97,
+    "Bulakty": 98,
+    "Burabay_(Borovoe)": 99,
+    "Burlin": 100,
+    "Buryl": 101,
+    "Chaglinka": 102,
+    "Chapaev": 103,
+    "Chapaevo": 104,
+    "Chaykino": 105,
+    "Chaykuruk": 106,
+    "Chernoyarka": 107,
+    "Chiganak": 108,
+    "Chundzha": 109,
+    "Damsa": 110,
+    "Daryinsk": 111,
+    "Daulet": 112,
+    "Denisovka": 113,
+    "Derkul": 114,
+    "Derzhavinsk": 115,
+    "Dolan": 116,
+    "Dolinka": 117,
+    "Doskey": 118,
+    "Dossor": 119,
+    "Dostyk": 120,
+    "Dubovka": 121,
+    "Elytay": 122,
+    "Enbekshi": 123,
+    "Enbekshi_(Karasayskiy_rayon)": 124,
+    "Ereymentau": 125,
+    "Erkin": 126,
+    "Esik": 127,
+    "Esily": 128,
+    "Farforovoe": 129,
+    "Fedorovka": 130,
+    "Fort-Shevchenko": 131,
+    "Gabidena_Mustafina": 132,
+    "Ganyushkino": 133,
+    "Geolog": 134,
+    "Glubokoe": 135,
+    "Gornyatskiy": 136,
+    "Granitnyy": 137,
+    "Gulydala": 138,
+    "Hromtau": 139,
+    "IYaF": 140,
+    "Imantau": 141,
+    "Inder": 142,
+    "Irgeli": 143,
+    "Irtyshsk": 144,
+    "Kabanbay": 145,
+    "Kabanbay_Batyra": 146,
+    "Kachar": 147,
+    "Kandyagash": 148,
+    "Kaplanbek": 149,
+    "Karabalyk": 150,
+    "Karabas": 151,
+    "Karabulak": 152,
+    "Karabulak_(p_Klyuchi)": 153,
+    "Karaganda": 154,
+    "Karagayly_(Chapaevo)": 155,
+    "Karakastek": 156,
+    "Karakemer": 157,
+    "Karaotkely": 158,
+    "Karaoy": 159,
+    "Karasu": 160,
+    "Karatau": 161,
+    "Karazhal": 162,
+    "Kargalinskoe_(Zhilyanka)": 163,
+    "Kargaly_(p__Fabrichnyy)": 164,
+    "Karkaralinsk": 165,
+    "Kaskelen": 166,
+    "Kasymbek_datka": 167,
+    "Katarkoly": 168,
+    "Katon-Karagay": 169,
+    "Kaynar": 170,
+    "Kaynazar_(Enbekshikazahskiy_rayon)": 171,
+    "Kaynazar_(Zhambylskiy_rayon)": 172,
+    "KazTsIK": 173,
+    "Kazalinsk": 174,
+    "Kazygurt": 175,
+    "Kazylzharma": 176,
+    "Kegen": 177,
+    "Kemertogan": 178,
+    "Kendala": 179,
+    "Kenesary": 180,
+    "Kenkiyak": 181,
+    "Kentau": 182,
+    "Kenzhekoly": 183,
+    "Kievka": 184,
+    "Kishi_Bayserke": 185,
+    "Kishkenekoly": 186,
+    "Kokkaynar": 187,
+    "Kokpekty": 188,
+    "Koksaek": 189,
+    "Koksay_(Puty_Ilyicha)": 190,
+    "Kokshetau": 191,
+    "Koksu": 192,
+    "Koktal": 193,
+    "Kokterek": 194,
+    "Kolydi": 195,
+    "Komsomolyskoe": 196,
+    "Konaev_(Kapchagay)": 197,
+    "Korday": 198,
+    "Korgalzhyn": 199,
+    "Kosozen": 200,
+    "Kosshy": 201,
+    "Kostanay": 202,
+    "Koyankus": 203,
+    "Koyshybek": 204,
+    "Krasina": 205,
+    "Krasnyy_partizan": 206,
+    "Krasnyy_yar": 207,
+    "Krugloozernoe": 208,
+    "Kulan": 209,
+    "Kulenovka": 210,
+    "Kulysary": 211,
+    "Kurashasay": 212,
+    "Kurayly": 213,
+    "Kurchatov": 214,
+    "Kurchum": 215,
+    "Kuryk": 216,
+    "Kushoky": 217,
+    "Kyrgauyldy": 218,
+    "Kyzyl-Kaynar": 219,
+    "Kyzyl_Kayrat": 220,
+    "Kyzylorda": 221,
+    "Kyzyltobe": 222,
+    "Kyzyltu": 223,
+    "Kyzylzhar": 224,
+    "Lenger": 225,
+    "Leninskiy": 226,
+    "Lisakovsk": 227,
+    "M__Tuymebaev": 228,
+    "Mahambet": 229,
+    "Makanchi": 230,
+    "Makat": 231,
+    "Makinka": 232,
+    "Makinsk": 233,
+    "Maloubinka": 234,
+    "Malovodnoe": 235,
+    "Mamlyutka": 236,
+    "Mangistau": 237,
+    "Mangyshlak": 238,
+    "Martuk": 239,
+    "Maykayyn": 240,
+    "Maykoly": 241,
+    "Maytobe": 242,
+    "Menovnoe": 243,
+    "Merey_(Selektsiya)": 244,
+    "Merke": 245,
+    "Mezhdurechensk": 246,
+    "Michurinskoe": 247,
+    "Molodezhnyy": 248,
+    "Moyyldy": 249,
+    "Mynbaevo": 250,
+    "Myrzakent": 251,
+    "Naberezhnoe": 252,
+    "Nauchnyy": 253,
+    "Novaya_Buhtarma": 254,
+    "Novaya_Sogra": 255,
+    "Novenykiy": 256,
+    "Novo-Ahmirovo": 257,
+    "Novocherkasskoe": 258,
+    "Novodolinsk": 259,
+    "Novoishimka": 260,
+    "Novoishimskoe": 261,
+    "Novopavlovka": 262,
+    "Novyy": 263,
+    "Nur-Sultan_(Astana)": 264,
+    "Nura": 265,
+    "Oktyabryskiy": 266,
+    "Oktyabryskoe": 267,
+    "Okzhetpes": 268,
+    "Opytnoe_pole": 269,
+    "Osakarovka": 270,
+    "Otar": 271,
+    "Otegen_batyr": 272,
+    "Panfilovo_(Tabaksovhoz)": 273,
+    "Pavlodar": 274,
+    "Pavlodarskoe": 275,
+    "Peremetnoe": 276,
+    "Peterfelyd": 277,
+    "Petropavlovka": 278,
+    "Petropavlovsk": 279,
+    "Petrovka": 280,
+    "Podstepnoe": 281,
+    "Praporshtikovo": 282,
+    "Predgornoe": 283,
+    "Presnovka": 284,
+    "Pribrezhnoe": 285,
+    "Pribrezhnyy": 286,
+    "Prigorodnoe": 287,
+    "Prioziorsk": 288,
+    "Progress": 289,
+    "Raduzhnoe": 290,
+    "Rassvet": 291,
+    "Rayymbek": 292,
+    "Ridder": 293,
+    "Rudnyy": 294,
+    "S_Shapagatova": 295,
+    "Sadchikova": 296,
+    "Sadovoe": 297,
+    "Samarskoe": 298,
+    "Sarany": 299,
+    "Sarkand": 300,
+    "Saryagash": 301,
+    "Sarykemer": 302,
+    "Sarykoly": 303,
+    "Saryoba": 304,
+    "Saryozek": 305,
+    "Saryshagan": 306,
+    "Sastobe": 307,
+    "Satpaev": 308,
+    "Saumalkoly": 309,
+    "Saymasay": 310,
+    "Sazda": 311,
+    "Sekisovka": 312,
+    "Semey": 313,
+    "Serebryansk": 314,
+    "Sergeevka": 315,
+    "Shagaly": 316,
+    "Shahan": 317,
+    "Shahtinsk": 318,
+    "Shalkar": 319,
+    "Shamalgan": 320,
+    "Shantobe": 321,
+    "Sharbakty": 322,
+    "Shardara": 323,
+    "Shashubay": 324,
+    "Shaulyder": 325,
+    "Shaykoryk": 326,
+    "Shelek": 327,
+    "Shemonaiha": 328,
+    "Shet": 329,
+    "Shetpe": 330,
+    "Shiderty": 331,
+    "Shieli": 332,
+    "Sholakkorgan": 333,
+    "Shortandy": 334,
+    "Shtapovo": 335,
+    "Shtuchinsk": 336,
+    "Shu": 337,
+    "Shubarkuduk": 338,
+    "Shubarsu": 339,
+    "Shulybinsk": 340,
+    "Shymkent": 341,
+    "Shyngyrlau": 342,
+    "Smirnovo": 343,
+    "Solnechnyy": 344,
+    "Sortirovka": 345,
+    "Stantsionnyy": 346,
+    "Stepnogorsk": 347,
+    "Stepnyak": 348,
+    "Talapker": 349,
+    "Taldykoly": 350,
+    "Taldykorgan": 351,
+    "Talgar": 352,
+    "Taranovskoe": 353,
+    "Taraz": 354,
+    "Tarhanka": 355,
+    "Tasboget": 356,
+    "Taskala": 357,
+    "Tavricheskoe": 358,
+    "Tayynsha": 359,
+    "Tekeli": 360,
+    "Temirlanovka": 361,
+    "Temirtau": 362,
+    "Terekty": 363,
+    "Terenkoly": 364,
+    "Terenozek": 365,
+    "Timiryazevo": 366,
+    "Tobol": 367,
+    "Tole_bi": 368,
+    "Tonkeris": 369,
+    "Topar": 370,
+    "Tortkuduk": 371,
+    "Trekino": 372,
+    "Tsentralynoe": 373,
+    "Turgen": 374,
+    "Turkestan": 375,
+    "Turksib": 376,
+    "Tuymekent": 377,
+    "Tuzdybastau_(Kalinino)": 378,
+    "Tyulykubas": 379,
+    "Uil": 380,
+    "Ulken_Naryn": 381,
+    "Ulyken": 382,
+    "Umbetali": 383,
+    "Umirzak": 384,
+    "Ungurtas": 385,
+    "Uralysk": 386,
+    "Urdzhar": 387,
+    "Ushanovo": 388,
+    "Usharal": 389,
+    "Ushtobe": 390,
+    "Uspenka": 391,
+    "Usty-Kamenogorsk": 392,
+    "Uzunkoly": 393,
+    "Uzynagash": 394,
+    "Vinnoe": 395,
+    "Vladimirovka": 396,
+    "Volgodonovka": 397,
+    "Voroshilovka": 398,
+    "Vozdvizhenka": 399,
+    "Yakory": 400,
+    "Yasnoe": 401,
+    "Yavlenka": 402,
+    "Yubileynoe": 403,
+    "Yuzhnyy": 404,
+    "Zachagansk": 405,
+    "Zarechnoe": 406,
+    "Zarechnyy": 407,
+    "Zatobolysk_(Tobyl)": 408,
+    "Zavodskoy": 409,
+    "Zaysan": 410,
+    "Zelenyy_bor": 411,
+    "Zerenda": 412,
+    "Zhaksy": 413,
+    "Zhalagash": 414,
+    "Zhalpaksay": 415,
+    "Zhalpaktobe": 416,
+    "Zhaltyr": 417,
+    "Zhambyl": 418,
+    "Zhambyl_(Zhambylskiy_rayon)": 419,
+    "Zhana_Kuat": 420,
+    "Zhanaarka": 421,
+    "Zhanakonys": 422,
+    "Zhanakurylys": 423,
+    "Zhanaozen": 424,
+    "Zhanatas": 425,
+    "Zhanaturmys": 426,
+    "Zhangala": 427,
+    "Zhansugurov": 428,
+    "Zhapek_batyr": 429,
+    "Zharkent": 430,
+    "Zhastar-2": 431,
+    "Zhaugashty": 432,
+    "Zhayrem": 433,
+    "Zhelaevo": 434,
+    "Zhelezinka": 435,
+    "Zhetekshi": 436,
+    "Zhetybay": 437,
+    "Zhetygen": 438,
+    "Zhetysay": 439,
+    "Zhezkazgan": 440,
+    "Zhezkent": 441,
+    "Zhibek_Zholy": 442,
+    "Zhibek_zholy": 443,
+    "Zhitikara": 444,
+    "Zholymbet": 445,
+    "Zhuldyz": 446,
+    "Zhympity": 447,
+    "aul_Besagash": 448,
+    "ekibastuz": 449,
+    "im__Kasyma_Kaysenova": 450,
+    "im__Turara_Ryskulova": 451,
+    "mkr_Vodnik-1": 452,
+    "mkr_Vodnik-2": 453,
+    "p_Aktau": 454
+  },
+  "centroids": [
+    {
+      "CITY": "Abay",
+      "LATITUDE": 49.299164457118586,
+      "LONGITUDE": 73.08793357766312,
+      "CITY_int": 0
+    },
+    {
+      "CITY": "Agadyry",
+      "LATITUDE": 48.2527886381106,
+      "LONGITUDE": 72.86026200799,
+      "CITY_int": 1
+    },
+    {
+      "CITY": "Ahmet",
+      "LATITUDE": 50.045778955699,
+      "LONGITUDE": 72.96557461481,
+      "CITY_int": 2
+    },
+    {
+      "CITY": "Ahmirovo",
+      "LATITUDE": 49.936823,
+      "LONGITUDE": 82.503126,
+      "CITY_int": 3
+    },
+    {
+      "CITY": "Akaral",
+      "LATITUDE": 42.894452164928,
+      "LONGITUDE": 71.342780362413,
+      "CITY_int": 4
+    },
+    {
+      "CITY": "Akbastau",
+      "LATITUDE": 43.52394967719,
+      "LONGITUDE": 77.4792720223025,
+      "CITY_int": 5
+    },
+    {
+      "CITY": "Akbulak",
+      "LATITUDE": 42.60178325,
+      "LONGITUDE": 71.62148524999999,
+      "CITY_int": 6
+    },
+    {
+      "CITY": "Akbulym",
+      "LATITUDE": 42.9094134342436,
+      "LONGITUDE": 71.4534247121872,
+      "CITY_int": 7
+    },
+    {
+      "CITY": "Akkistau",
+      "LATITUDE": 47.226082045069504,
+      "LONGITUDE": 51.0102360742775,
+      "CITY_int": 8
+    },
+    {
+      "CITY": "Akkoly",
+      "LATITUDE": 51.99237838081303,
+      "LONGITUDE": 70.93922251269036,
+      "CITY_int": 9
+    },
+    {
+      "CITY": "Akkoly_(svhz_Kokchetavskiy)",
+      "LATITUDE": 51.978368,
+      "LONGITUDE": 70.961113,
+      "CITY_int": 10
+    },
+    {
+      "CITY": "Akmol",
+      "LATITUDE": 51.07359800928358,
+      "LONGITUDE": 70.97998982938034,
+      "CITY_int": 11
+    },
+    {
+      "CITY": "Aksay",
+      "LATITUDE": 51.15476386353805,
+      "LONGITUDE": 53.03296320958645,
+      "CITY_int": 12
+    },
+    {
+      "CITY": "Akshi",
+      "LATITUDE": 45.95042900000001,
+      "LONGITUDE": 81.562653,
+      "CITY_int": 13
+    },
+    {
+      "CITY": "Akshukur",
+      "LATITUDE": 43.687650428557,
+      "LONGITUDE": 51.152745065718,
+      "CITY_int": 14
+    },
+    {
+      "CITY": "Aksu",
+      "LATITUDE": 52.03642112427993,
+      "LONGITUDE": 76.91108887546717,
+      "CITY_int": 15
+    },
+    {
+      "CITY": "Aksukent",
+      "LATITUDE": 42.4339736694084,
+      "LONGITUDE": 69.82422691956816,
+      "CITY_int": 16
+    },
+    {
+      "CITY": "Aktas",
+      "LATITUDE": 49.61293659475496,
+      "LONGITUDE": 73.05782412689078,
+      "CITY_int": 17
+    },
+    {
+      "CITY": "Aktau",
+      "LATITUDE": 43.6680227140653,
+      "LONGITUDE": 51.16906017273513,
+      "CITY_int": 18
+    },
+    {
+      "CITY": "Aktobe",
+      "LATITUDE": 50.2823679237838,
+      "LONGITUDE": 57.17531676911268,
+      "CITY_int": 19
+    },
+    {
+      "CITY": "Alatau",
+      "LATITUDE": 43.65289453247139,
+      "LONGITUDE": 77.11526330180835,
+      "CITY_int": 20
+    },
+    {
+      "CITY": "Aldabergenovo_",
+      "LATITUDE": 45.06520916435011,
+      "LONGITUDE": 78.44063782758688,
+      "CITY_int": 21
+    },
+    {
+      "CITY": "Alekseevka",
+      "LATITUDE": 53.509743,
+      "LONGITUDE": 69.520207,
+      "CITY_int": 22
+    },
+    {
+      "CITY": "Alga",
+      "LATITUDE": 49.863245274307715,
+      "LONGITUDE": 57.38717963348175,
+      "CITY_int": 23
+    },
+    {
+      "CITY": "Almaly",
+      "LATITUDE": 45.58710616666667,
+      "LONGITUDE": 60.99515416666667,
+      "CITY_int": 24
+    },
+    {
+      "CITY": "Almalybak_(KIZ)",
+      "LATITUDE": 43.22151622002596,
+      "LONGITUDE": 76.68045494099016,
+      "CITY_int": 25
+    },
+    {
+      "CITY": "Almalyk",
+      "LATITUDE": 43.28392767825693,
+      "LONGITUDE": 77.20350351626736,
+      "CITY_int": 26
+    },
+    {
+      "CITY": "Almaty",
+      "LATITUDE": 43.2409612121793,
+      "LONGITUDE": 76.88467705648723,
+      "CITY_int": 27
+    },
+    {
+      "CITY": "Altay",
+      "LATITUDE": 49.71701547702048,
+      "LONGITUDE": 84.25609395605348,
+      "CITY_int": 28
+    },
+    {
+      "CITY": "Altayskiy",
+      "LATITUDE": 50.2410155,
+      "LONGITUDE": 82.363104375,
+      "CITY_int": 29
+    },
+    {
+      "CITY": "Altynsarino_(Kamystinskiy_rayon)",
+      "LATITUDE": 53.139147763055,
+      "LONGITUDE": 63.616162321851,
+      "CITY_int": 30
+    },
+    {
+      "CITY": "Alyzhan",
+      "LATITUDE": 53.063438999999995,
+      "LONGITUDE": 68.644277,
+      "CITY_int": 31
+    },
+    {
+      "CITY": "Amankaragay",
+      "LATITUDE": 52.40190716666667,
+      "LONGITUDE": 64.098618,
+      "CITY_int": 32
+    },
+    {
+      "CITY": "Anar",
+      "LATITUDE": 50.6619620207845,
+      "LONGITUDE": 72.389076620252,
+      "CITY_int": 33
+    },
+    {
+      "CITY": "Andas_batyra",
+      "LATITUDE": 43.678895,
+      "LONGITUDE": 73.766678,
+      "CITY_int": 34
+    },
+    {
+      "CITY": "Aralysk",
+      "LATITUDE": 46.80024456614572,
+      "LONGITUDE": 61.65653001635054,
+      "CITY_int": 35
+    },
+    {
+      "CITY": "Arayly",
+      "LATITUDE": 51.303824362971,
+      "LONGITUDE": 70.99681909395967,
+      "CITY_int": 36
+    },
+    {
+      "CITY": "Arkalyk",
+      "LATITUDE": 50.25021604997314,
+      "LONGITUDE": 66.92086317537418,
+      "CITY_int": 37
+    },
+    {
+      "CITY": "Arshaly",
+      "LATITUDE": 50.83700221262231,
+      "LONGITUDE": 72.17207339148482,
+      "CITY_int": 38
+    },
+    {
+      "CITY": "Arysy",
+      "LATITUDE": 42.433890774812234,
+      "LONGITUDE": 68.80782350229397,
+      "CITY_int": 39
+    },
+    {
+      "CITY": "Asa",
+      "LATITUDE": 42.988630072103334,
+      "LONGITUDE": 71.20815216985801,
+      "CITY_int": 40
+    },
+    {
+      "CITY": "Asan",
+      "LATITUDE": 51.26412872098163,
+      "LONGITUDE": 51.42693515411673,
+      "CITY_int": 41
+    },
+    {
+      "CITY": "Ashtibulak",
+      "LATITUDE": 43.402076160937476,
+      "LONGITUDE": 76.93235678167159,
+      "CITY_int": 42
+    },
+    {
+      "CITY": "Askara_Tokpanova_(KazTsIK)",
+      "LATITUDE": 43.3683008351848,
+      "LONGITUDE": 76.872422201211,
+      "CITY_int": 43
+    },
+    {
+      "CITY": "Astana",
+      "LATITUDE": 51.12888426103953,
+      "LONGITUDE": 71.42353588402516,
+      "CITY_int": 44
+    },
+    {
+      "CITY": "Astrahanka",
+      "LATITUDE": 51.53006175,
+      "LONGITUDE": 69.795821,
+      "CITY_int": 45
+    },
+    {
+      "CITY": "Asykata",
+      "LATITUDE": 40.891893506788996,
+      "LONGITUDE": 68.365523363166,
+      "CITY_int": 46
+    },
+    {
+      "CITY": "Atakent",
+      "LATITUDE": 40.999442711612694,
+      "LONGITUDE": 68.76162576829253,
+      "CITY_int": 47
+    },
+    {
+      "CITY": "Atameken",
+      "LATITUDE": 43.6673635,
+      "LONGITUDE": 51.2057455,
+      "CITY_int": 48
+    },
+    {
+      "CITY": "Atasu",
+      "LATITUDE": 48.573274970872625,
+      "LONGITUDE": 72.04096417026459,
+      "CITY_int": 49
+    },
+    {
+      "CITY": "Atbasar",
+      "LATITUDE": 51.811858330451535,
+      "LONGITUDE": 68.35103539311429,
+      "CITY_int": 50
+    },
+    {
+      "CITY": "Atyrau",
+      "LATITUDE": 47.10905365224724,
+      "LONGITUDE": 51.90618934721978,
+      "CITY_int": 51
+    },
+    {
+      "CITY": "Auezov",
+      "LATITUDE": 49.605057243073446,
+      "LONGITUDE": 81.96609842504556,
+      "CITY_int": 52
+    },
+    {
+      "CITY": "Auliekoly",
+      "LATITUDE": 52.36385124238939,
+      "LONGITUDE": 64.14407207753955,
+      "CITY_int": 53
+    },
+    {
+      "CITY": "Avat",
+      "LATITUDE": 43.40283434231625,
+      "LONGITUDE": 77.263077357415,
+      "CITY_int": 54
+    },
+    {
+      "CITY": "Ayagoz",
+      "LATITUDE": 47.97555501491704,
+      "LONGITUDE": 80.42503603812301,
+      "CITY_int": 55
+    },
+    {
+      "CITY": "Aysha-Bibi",
+      "LATITUDE": 42.9130436636615,
+      "LONGITUDE": 71.364122362919,
+      "CITY_int": 56
+    },
+    {
+      "CITY": "Azat",
+      "LATITUDE": 53.19877075,
+      "LONGITUDE": 70.033533,
+      "CITY_int": 57
+    },
+    {
+      "CITY": "Babatay",
+      "LATITUDE": 50.970308,
+      "LONGITUDE": 71.960291,
+      "CITY_int": 58
+    },
+    {
+      "CITY": "Badamsha",
+      "LATITUDE": 50.56100146176067,
+      "LONGITUDE": 58.27902769036384,
+      "CITY_int": 59
+    },
+    {
+      "CITY": "Bakanas",
+      "LATITUDE": 44.806724,
+      "LONGITUDE": 76.274244,
+      "CITY_int": 60
+    },
+    {
+      "CITY": "Balhash",
+      "LATITUDE": 46.8511779324008,
+      "LONGITUDE": 74.9773972432393,
+      "CITY_int": 61
+    },
+    {
+      "CITY": "Balkashino",
+      "LATITUDE": 52.52738088567966,
+      "LONGITUDE": 68.7598778648605,
+      "CITY_int": 62
+    },
+    {
+      "CITY": "Balpyk_Bi",
+      "LATITUDE": 44.90467175159994,
+      "LONGITUDE": 78.23924774210367,
+      "CITY_int": 63
+    },
+    {
+      "CITY": "Balykshy",
+      "LATITUDE": 46.900645692171274,
+      "LONGITUDE": 50.717833100413095,
+      "CITY_int": 64
+    },
+    {
+      "CITY": "Batyr",
+      "LATITUDE": 43.626701924315626,
+      "LONGITUDE": 51.41857521574388,
+      "CITY_int": 65
+    },
+    {
+      "CITY": "Bauyrzhan_Momyshuly",
+      "LATITUDE": 42.61682986691343,
+      "LONGITUDE": 70.76620430817462,
+      "CITY_int": 66
+    },
+    {
+      "CITY": "Bayanaul",
+      "LATITUDE": 50.793138,
+      "LONGITUDE": 75.70084,
+      "CITY_int": 67
+    },
+    {
+      "CITY": "Bayandy",
+      "LATITUDE": 43.7630766310345,
+      "LONGITUDE": 51.30403950924925,
+      "CITY_int": 68
+    },
+    {
+      "CITY": "Baydibek_bi",
+      "LATITUDE": 43.510893627196076,
+      "LONGITUDE": 77.68997937447985,
+      "CITY_int": 69
+    },
+    {
+      "CITY": "Baykent",
+      "LATITUDE": 43.464455672628,
+      "LONGITUDE": 76.81064469188101,
+      "CITY_int": 70
+    },
+    {
+      "CITY": "Baykonur",
+      "LATITUDE": 45.632989346954,
+      "LONGITUDE": 63.312149617291,
+      "CITY_int": 71
+    },
+    {
+      "CITY": "Bayserke",
+      "LATITUDE": 43.48275092630992,
+      "LONGITUDE": 77.04634977770714,
+      "CITY_int": 72
+    },
+    {
+      "CITY": "Bayterek",
+      "LATITUDE": 42.879517092126,
+      "LONGITUDE": 71.307810809095,
+      "CITY_int": 73
+    },
+    {
+      "CITY": "Bayterek_(Novoalekseevka)",
+      "LATITUDE": 43.393851979150824,
+      "LONGITUDE": 77.22206557812035,
+      "CITY_int": 74
+    },
+    {
+      "CITY": "Baytorysay",
+      "LATITUDE": 50.9592,
+      "LONGITUDE": 56.780515,
+      "CITY_int": 75
+    },
+    {
+      "CITY": "Bekbolat",
+      "LATITUDE": 43.159284485779,
+      "LONGITUDE": 76.44610481533,
+      "CITY_int": 76
+    },
+    {
+      "CITY": "Beloe",
+      "LATITUDE": 54.933351684196495,
+      "LONGITUDE": 69.2022400698685,
+      "CITY_int": 77
+    },
+    {
+      "CITY": "Belousovka",
+      "LATITUDE": 50.13674222412856,
+      "LONGITUDE": 82.52985396636797,
+      "CITY_int": 78
+    },
+    {
+      "CITY": "Belybulak_(Michurino)",
+      "LATITUDE": 43.30804433014278,
+      "LONGITUDE": 77.10085685001211,
+      "CITY_int": 79
+    },
+    {
+      "CITY": "Bereke",
+      "LATITUDE": 43.36782955088488,
+      "LONGITUDE": 76.71107552314575,
+      "CITY_int": 80
+    },
+    {
+      "CITY": "Besagash",
+      "LATITUDE": 43.30054069478651,
+      "LONGITUDE": 77.02193296377223,
+      "CITY_int": 81
+    },
+    {
+      "CITY": "Beskaragay",
+      "LATITUDE": 49.504778947131776,
+      "LONGITUDE": 83.39916778662766,
+      "CITY_int": 82
+    },
+    {
+      "CITY": "Beskaynar_(Gornyy_Sadovod)",
+      "LATITUDE": 43.216379,
+      "LONGITUDE": 77.102033,
+      "CITY_int": 83
+    },
+    {
+      "CITY": "Bestamak",
+      "LATITUDE": 50.116820538334494,
+      "LONGITUDE": 57.469689580675,
+      "CITY_int": 84
+    },
+    {
+      "CITY": "Beybarys",
+      "LATITUDE": 47.450281378761,
+      "LONGITUDE": 51.793684691551,
+      "CITY_int": 85
+    },
+    {
+      "CITY": "Beyneu",
+      "LATITUDE": 45.316019085607664,
+      "LONGITUDE": 55.188553880954466,
+      "CITY_int": 86
+    },
+    {
+      "CITY": "Bishkuly",
+      "LATITUDE": 54.774268521718064,
+      "LONGITUDE": 69.09302462592481,
+      "CITY_int": 87
+    },
+    {
+      "CITY": "Bobrovka",
+      "LATITUDE": 50.159118678592,
+      "LONGITUDE": 82.720547027589,
+      "CITY_int": 88
+    },
+    {
+      "CITY": "Bolek",
+      "LATITUDE": 43.40621211598575,
+      "LONGITUDE": 77.42107829532425,
+      "CITY_int": 89
+    },
+    {
+      "CITY": "Bolyshoy_Chagan",
+      "LATITUDE": 50.8980548338635,
+      "LONGITUDE": 51.1379275565695,
+      "CITY_int": 90
+    },
+    {
+      "CITY": "Boralday",
+      "LATITUDE": 42.778016974256,
+      "LONGITUDE": 69.654836583991,
+      "CITY_int": 91
+    },
+    {
+      "CITY": "Boralday_(Burunday)",
+      "LATITUDE": 43.36298300786619,
+      "LONGITUDE": 76.85269135236625,
+      "CITY_int": 92
+    },
+    {
+      "CITY": "Boroduliha",
+      "LATITUDE": 50.660213399510035,
+      "LONGITUDE": 81.09530221793187,
+      "CITY_int": 93
+    },
+    {
+      "CITY": "Borovskoy",
+      "LATITUDE": 53.80886375,
+      "LONGITUDE": 64.17620074999999,
+      "CITY_int": 94
+    },
+    {
+      "CITY": "Botakara",
+      "LATITUDE": 50.058920023313114,
+      "LONGITUDE": 73.70601209272435,
+      "CITY_int": 95
+    },
+    {
+      "CITY": "Bozaygyr",
+      "LATITUDE": 51.4753112775075,
+      "LONGITUDE": 71.212900061396,
+      "CITY_int": 96
+    },
+    {
+      "CITY": "Bulaevo",
+      "LATITUDE": 54.90185506612976,
+      "LONGITUDE": 70.41118441682188,
+      "CITY_int": 97
+    },
+    {
+      "CITY": "Bulakty",
+      "LATITUDE": 43.2202549736415,
+      "LONGITUDE": 76.74388108386151,
+      "CITY_int": 98
+    },
+    {
+      "CITY": "Burabay_(Borovoe)",
+      "LATITUDE": 53.077133702623215,
+      "LONGITUDE": 70.29110862345314,
+      "CITY_int": 99
+    },
+    {
+      "CITY": "Burlin",
+      "LATITUDE": 51.420092611048005,
+      "LONGITUDE": 52.7222631781585,
+      "CITY_int": 100
+    },
+    {
+      "CITY": "Buryl",
+      "LATITUDE": 42.971563,
+      "LONGITUDE": 71.419272,
+      "CITY_int": 101
+    },
+    {
+      "CITY": "Chaglinka",
+      "LATITUDE": 53.09961523699737,
+      "LONGITUDE": 69.60916447352776,
+      "CITY_int": 102
+    },
+    {
+      "CITY": "Chapaev",
+      "LATITUDE": 50.18551864352091,
+      "LONGITUDE": 51.16684924081646,
+      "CITY_int": 103
+    },
+    {
+      "CITY": "Chapaevo",
+      "LATITUDE": 43.46058926670577,
+      "LONGITUDE": 76.83405400551784,
+      "CITY_int": 104
+    },
+    {
+      "CITY": "Chaykino",
+      "LATITUDE": 53.30308,
+      "LONGITUDE": 69.260504,
+      "CITY_int": 105
+    },
+    {
+      "CITY": "Chaykuruk",
+      "LATITUDE": 42.960387,
+      "LONGITUDE": 71.35127,
+      "CITY_int": 106
+    },
+    {
+      "CITY": "Chernoyarka",
+      "LATITUDE": 52.54146835,
+      "LONGITUDE": 76.8040844,
+      "CITY_int": 107
+    },
+    {
+      "CITY": "Chiganak",
+      "LATITUDE": 42.907932,
+      "LONGITUDE": 71.375174,
+      "CITY_int": 108
+    },
+    {
+      "CITY": "Chundzha",
+      "LATITUDE": 43.53907348369528,
+      "LONGITUDE": 79.46357257453357,
+      "CITY_int": 109
+    },
+    {
+      "CITY": "Damsa",
+      "LATITUDE": 51.668209647348455,
+      "LONGITUDE": 71.03710095137805,
+      "CITY_int": 110
+    },
+    {
+      "CITY": "Daryinsk",
+      "LATITUDE": 51.14874641669684,
+      "LONGITUDE": 51.64846958939031,
+      "CITY_int": 111
+    },
+    {
+      "CITY": "Daulet",
+      "LATITUDE": 43.60621291841216,
+      "LONGITUDE": 77.105201003025,
+      "CITY_int": 112
+    },
+    {
+      "CITY": "Denisovka",
+      "LATITUDE": 52.79737225,
+      "LONGITUDE": 62.67167125,
+      "CITY_int": 113
+    },
+    {
+      "CITY": "Derkul",
+      "LATITUDE": 51.25867575942582,
+      "LONGITUDE": 51.29024307635978,
+      "CITY_int": 114
+    },
+    {
+      "CITY": "Derzhavinsk",
+      "LATITUDE": 51.1021605,
+      "LONGITUDE": 66.3144115,
+      "CITY_int": 115
+    },
+    {
+      "CITY": "Dolan",
+      "LATITUDE": 43.19808999795245,
+      "LONGITUDE": 76.68936002173591,
+      "CITY_int": 116
+    },
+    {
+      "CITY": "Dolinka",
+      "LATITUDE": 49.675535,
+      "LONGITUDE": 72.670715,
+      "CITY_int": 117
+    },
+    {
+      "CITY": "Doskey",
+      "LATITUDE": 49.86112275037144,
+      "LONGITUDE": 73.26194162395755,
+      "CITY_int": 118
+    },
+    {
+      "CITY": "Dossor",
+      "LATITUDE": 47.53342442974009,
+      "LONGITUDE": 52.97238061072927,
+      "CITY_int": 119
+    },
+    {
+      "CITY": "Dostyk",
+      "LATITUDE": 40.709015,
+      "LONGITUDE": 68.32419,
+      "CITY_int": 120
+    },
+    {
+      "CITY": "Dubovka",
+      "LATITUDE": 49.67690294650081,
+      "LONGITUDE": 73.00209727716457,
+      "CITY_int": 121
+    },
+    {
+      "CITY": "Elytay",
+      "LATITUDE": 43.224341799571505,
+      "LONGITUDE": 75.67219157776684,
+      "CITY_int": 122
+    },
+    {
+      "CITY": "Enbekshi",
+      "LATITUDE": 43.2647510494934,
+      "LONGITUDE": 76.63855290609754,
+      "CITY_int": 123
+    },
+    {
+      "CITY": "Enbekshi_(Karasayskiy_rayon)",
+      "LATITUDE": 43.237775882906426,
+      "LONGITUDE": 76.54662835731415,
+      "CITY_int": 124
+    },
+    {
+      "CITY": "Ereymentau",
+      "LATITUDE": 51.618838211227754,
+      "LONGITUDE": 73.08978370073451,
+      "CITY_int": 125
+    },
+    {
+      "CITY": "Erkin",
+      "LATITUDE": 43.4432316745075,
+      "LONGITUDE": 77.03942356095513,
+      "CITY_int": 126
+    },
+    {
+      "CITY": "Esik",
+      "LATITUDE": 43.37067569613092,
+      "LONGITUDE": 77.441697296137,
+      "CITY_int": 127
+    },
+    {
+      "CITY": "Esily",
+      "LATITUDE": 51.94833160872624,
+      "LONGITUDE": 66.48716337547833,
+      "CITY_int": 128
+    },
+    {
+      "CITY": "Farforovoe",
+      "LATITUDE": 51.29654440651033,
+      "LONGITUDE": 71.212013340519,
+      "CITY_int": 129
+    },
+    {
+      "CITY": "Fedorovka",
+      "LATITUDE": 52.64479436348723,
+      "LONGITUDE": 58.52954707018008,
+      "CITY_int": 130
+    },
+    {
+      "CITY": "Fort-Shevchenko",
+      "LATITUDE": 44.505758390796665,
+      "LONGITUDE": 50.25635115935367,
+      "CITY_int": 131
+    },
+    {
+      "CITY": "Gabidena_Mustafina",
+      "LATITUDE": 50.120764928571425,
+      "LONGITUDE": 73.15814028571428,
+      "CITY_int": 132
+    },
+    {
+      "CITY": "Ganyushkino",
+      "LATITUDE": 46.60397906316266,
+      "LONGITUDE": 49.269465444248,
+      "CITY_int": 133
+    },
+    {
+      "CITY": "Geolog",
+      "LATITUDE": 47.1549881791269,
+      "LONGITUDE": 51.937532619707,
+      "CITY_int": 134
+    },
+    {
+      "CITY": "Glubokoe",
+      "LATITUDE": 50.14920090672433,
+      "LONGITUDE": 82.3186624931042,
+      "CITY_int": 135
+    },
+    {
+      "CITY": "Gornyatskiy",
+      "LATITUDE": 53.02972853846154,
+      "LONGITUDE": 63.11273469230769,
+      "CITY_int": 136
+    },
+    {
+      "CITY": "Granitnyy",
+      "LATITUDE": 53.41440685602109,
+      "LONGITUDE": 69.389911080088,
+      "CITY_int": 137
+    },
+    {
+      "CITY": "Gulydala",
+      "LATITUDE": 43.38818259296174,
+      "LONGITUDE": 77.03080100536242,
+      "CITY_int": 138
+    },
+    {
+      "CITY": "Hromtau",
+      "LATITUDE": 50.25615715090167,
+      "LONGITUDE": 58.41441473979523,
+      "CITY_int": 139
+    },
+    {
+      "CITY": "IYaF",
+      "LATITUDE": 43.231258,
+      "LONGITUDE": 76.753342,
+      "CITY_int": 140
+    },
+    {
+      "CITY": "Imantau",
+      "LATITUDE": 52.974254,
+      "LONGITUDE": 68.363644,
+      "CITY_int": 141
+    },
+    {
+      "CITY": "Inder",
+      "LATITUDE": 48.53047499874489,
+      "LONGITUDE": 51.73521737700005,
+      "CITY_int": 142
+    },
+    {
+      "CITY": "Irgeli",
+      "LATITUDE": 43.23183905132148,
+      "LONGITUDE": 76.75311901841296,
+      "CITY_int": 143
+    },
+    {
+      "CITY": "Irtyshsk",
+      "LATITUDE": 53.34377333333333,
+      "LONGITUDE": 75.45030150000001,
+      "CITY_int": 144
+    },
+    {
+      "CITY": "Kabanbay",
+      "LATITUDE": 45.90394561727867,
+      "LONGITUDE": 81.13236319668401,
+      "CITY_int": 145
+    },
+    {
+      "CITY": "Kabanbay_Batyra",
+      "LATITUDE": 50.852358550904796,
+      "LONGITUDE": 71.35957470424546,
+      "CITY_int": 146
+    },
+    {
+      "CITY": "Kachar",
+      "LATITUDE": 53.348325218387494,
+      "LONGITUDE": 62.88062233226321,
+      "CITY_int": 147
+    },
+    {
+      "CITY": "Kandyagash",
+      "LATITUDE": 49.4582064561183,
+      "LONGITUDE": 57.4075017840391,
+      "CITY_int": 148
+    },
+    {
+      "CITY": "Kaplanbek",
+      "LATITUDE": 41.49263625,
+      "LONGITUDE": 69.26812275,
+      "CITY_int": 149
+    },
+    {
+      "CITY": "Karabalyk",
+      "LATITUDE": 53.71848489993061,
+      "LONGITUDE": 62.14220951803683,
+      "CITY_int": 150
+    },
+    {
+      "CITY": "Karabas",
+      "LATITUDE": 49.5760158405875,
+      "LONGITUDE": 72.89477109209633,
+      "CITY_int": 151
+    },
+    {
+      "CITY": "Karabulak",
+      "LATITUDE": 44.91313975317499,
+      "LONGITUDE": 78.48826147709283,
+      "CITY_int": 152
+    },
+    {
+      "CITY": "Karabulak_(p_Klyuchi)",
+      "LATITUDE": 43.520028602928974,
+      "LONGITUDE": 77.07107039513942,
+      "CITY_int": 153
+    },
+    {
+      "CITY": "Karaganda",
+      "LATITUDE": 49.82103133583907,
+      "LONGITUDE": 73.13362865855528,
+      "CITY_int": 154
+    },
+    {
+      "CITY": "Karagayly_(Chapaevo)",
+      "LATITUDE": 43.4979532044575,
+      "LONGITUDE": 77.2889810413635,
+      "CITY_int": 155
+    },
+    {
+      "CITY": "Karakastek",
+      "LATITUDE": 43.1363085,
+      "LONGITUDE": 76.108923,
+      "CITY_int": 156
+    },
+    {
+      "CITY": "Karakemer",
+      "LATITUDE": 43.420564850666665,
+      "LONGITUDE": 77.6201755845969,
+      "CITY_int": 157
+    },
+    {
+      "CITY": "Karaotkely",
+      "LATITUDE": 51.11812770174372,
+      "LONGITUDE": 71.21921132347985,
+      "CITY_int": 158
+    },
+    {
+      "CITY": "Karaoy",
+      "LATITUDE": 43.525818,
+      "LONGITUDE": 76.831361,
+      "CITY_int": 159
+    },
+    {
+      "CITY": "Karasu",
+      "LATITUDE": 42.4037268624525,
+      "LONGITUDE": 69.79878578470525,
+      "CITY_int": 160
+    },
+    {
+      "CITY": "Karatau",
+      "LATITUDE": 43.14741881008402,
+      "LONGITUDE": 70.54957516138428,
+      "CITY_int": 161
+    },
+    {
+      "CITY": "Karazhal",
+      "LATITUDE": 48.08322598478125,
+      "LONGITUDE": 70.62992045096874,
+      "CITY_int": 162
+    },
+    {
+      "CITY": "Kargalinskoe_(Zhilyanka)",
+      "LATITUDE": 50.198417386486,
+      "LONGITUDE": 57.24117382620316,
+      "CITY_int": 163
+    },
+    {
+      "CITY": "Kargaly_(p__Fabrichnyy)",
+      "LATITUDE": 43.16567520746678,
+      "LONGITUDE": 76.4223868127666,
+      "CITY_int": 164
+    },
+    {
+      "CITY": "Karkaralinsk",
+      "LATITUDE": 49.41208863193422,
+      "LONGITUDE": 75.47305977973703,
+      "CITY_int": 165
+    },
+    {
+      "CITY": "Kaskelen",
+      "LATITUDE": 43.20999923552252,
+      "LONGITUDE": 76.63690611609907,
+      "CITY_int": 166
+    },
+    {
+      "CITY": "Kasymbek_datka",
+      "LATITUDE": 42.4771876,
+      "LONGITUDE": 69.63544060000001,
+      "CITY_int": 167
+    },
+    {
+      "CITY": "Katarkoly",
+      "LATITUDE": 52.948244,
+      "LONGITUDE": 70.423274,
+      "CITY_int": 168
+    },
+    {
+      "CITY": "Katon-Karagay",
+      "LATITUDE": 49.171241195777796,
+      "LONGITUDE": 85.6101733391342,
+      "CITY_int": 169
+    },
+    {
+      "CITY": "Kaynar",
+      "LATITUDE": 43.0247973712985,
+      "LONGITUDE": 74.53653056665483,
+      "CITY_int": 170
+    },
+    {
+      "CITY": "Kaynazar_(Enbekshikazahskiy_rayon)",
+      "LATITUDE": 43.369614837684,
+      "LONGITUDE": 77.310375064055,
+      "CITY_int": 171
+    },
+    {
+      "CITY": "Kaynazar_(Zhambylskiy_rayon)",
+      "LATITUDE": 43.210643,
+      "LONGITUDE": 76.288904,
+      "CITY_int": 172
+    },
+    {
+      "CITY": "KazTsIK",
+      "LATITUDE": 43.366034135575134,
+      "LONGITUDE": 76.87474038704138,
+      "CITY_int": 173
+    },
+    {
+      "CITY": "Kazalinsk",
+      "LATITUDE": 45.843149,
+      "LONGITUDE": 62.154773875000004,
+      "CITY_int": 174
+    },
+    {
+      "CITY": "Kazygurt",
+      "LATITUDE": 41.755609135163,
+      "LONGITUDE": 69.388095402575,
+      "CITY_int": 175
+    },
+    {
+      "CITY": "Kazylzharma",
+      "LATITUDE": 44.8289048283674,
+      "LONGITUDE": 65.54084857465901,
+      "CITY_int": 176
+    },
+    {
+      "CITY": "Kegen",
+      "LATITUDE": 43.016984,
+      "LONGITUDE": 79.225542,
+      "CITY_int": 177
+    },
+    {
+      "CITY": "Kemertogan",
+      "LATITUDE": 43.250891608072,
+      "LONGITUDE": 76.752913864529,
+      "CITY_int": 178
+    },
+    {
+      "CITY": "Kendala",
+      "LATITUDE": 43.33348886920946,
+      "LONGITUDE": 77.20859257980977,
+      "CITY_int": 179
+    },
+    {
+      "CITY": "Kenesary",
+      "LATITUDE": 52.85654194900817,
+      "LONGITUDE": 70.15520147947466,
+      "CITY_int": 180
+    },
+    {
+      "CITY": "Kenkiyak",
+      "LATITUDE": 48.607135713261,
+      "LONGITUDE": 57.110826425057,
+      "CITY_int": 181
+    },
+    {
+      "CITY": "Kentau",
+      "LATITUDE": 43.536072805776776,
+      "LONGITUDE": 68.49687349658481,
+      "CITY_int": 182
+    },
+    {
+      "CITY": "Kenzhekoly",
+      "LATITUDE": 52.184560337171334,
+      "LONGITUDE": 77.02735287885628,
+      "CITY_int": 183
+    },
+    {
+      "CITY": "Kievka",
+      "LATITUDE": 50.244941177988146,
+      "LONGITUDE": 71.52853260820243,
+      "CITY_int": 184
+    },
+    {
+      "CITY": "Kishi_Bayserke",
+      "LATITUDE": 43.492427,
+      "LONGITUDE": 77.052787,
+      "CITY_int": 185
+    },
+    {
+      "CITY": "Kishkenekoly",
+      "LATITUDE": 53.63509,
+      "LONGITUDE": 72.33594,
+      "CITY_int": 186
+    },
+    {
+      "CITY": "Kokkaynar",
+      "LATITUDE": 43.444345,
+      "LONGITUDE": 76.940048,
+      "CITY_int": 187
+    },
+    {
+      "CITY": "Kokpekty",
+      "LATITUDE": 49.95031582321486,
+      "LONGITUDE": 73.25302293274686,
+      "CITY_int": 188
+    },
+    {
+      "CITY": "Koksaek",
+      "LATITUDE": 42.260468734228,
+      "LONGITUDE": 70.008434158065,
+      "CITY_int": 189
+    },
+    {
+      "CITY": "Koksay_(Puty_Ilyicha)",
+      "LATITUDE": 43.25569979852559,
+      "LONGITUDE": 76.79070468183323,
+      "CITY_int": 190
+    },
+    {
+      "CITY": "Kokshetau",
+      "LATITUDE": 53.2890787722679,
+      "LONGITUDE": 69.3944985247206,
+      "CITY_int": 191
+    },
+    {
+      "CITY": "Koksu",
+      "LATITUDE": 44.899065599224,
+      "LONGITUDE": 78.23872002949,
+      "CITY_int": 192
+    },
+    {
+      "CITY": "Koktal",
+      "LATITUDE": 43.000634,
+      "LONGITUDE": 71.448548,
+      "CITY_int": 193
+    },
+    {
+      "CITY": "Kokterek",
+      "LATITUDE": 43.493188705948036,
+      "LONGITUDE": 77.0087596282672,
+      "CITY_int": 194
+    },
+    {
+      "CITY": "Kolydi",
+      "LATITUDE": 43.400455,
+      "LONGITUDE": 77.399824,
+      "CITY_int": 195
+    },
+    {
+      "CITY": "Komsomolyskoe",
+      "LATITUDE": 53.219522,
+      "LONGITUDE": 63.633223,
+      "CITY_int": 196
+    },
+    {
+      "CITY": "Konaev_(Kapchagay)",
+      "LATITUDE": 43.89191197115432,
+      "LONGITUDE": 77.03339731209196,
+      "CITY_int": 197
+    },
+    {
+      "CITY": "Korday",
+      "LATITUDE": 43.04514400142316,
+      "LONGITUDE": 74.71582095712995,
+      "CITY_int": 198
+    },
+    {
+      "CITY": "Korgalzhyn",
+      "LATITUDE": 50.583731,
+      "LONGITUDE": 70.018017,
+      "CITY_int": 199
+    },
+    {
+      "CITY": "Kosozen",
+      "LATITUDE": 43.560938666666665,
+      "LONGITUDE": 76.91655433333334,
+      "CITY_int": 200
+    },
+    {
+      "CITY": "Kosshy",
+      "LATITUDE": 50.997964297607844,
+      "LONGITUDE": 71.36248862485012,
+      "CITY_int": 201
+    },
+    {
+      "CITY": "Kostanay",
+      "LATITUDE": 53.21327417606174,
+      "LONGITUDE": 63.62028226832966,
+      "CITY_int": 202
+    },
+    {
+      "CITY": "Koyankus",
+      "LATITUDE": 43.3938519869038,
+      "LONGITUDE": 76.97000157986864,
+      "CITY_int": 203
+    },
+    {
+      "CITY": "Koyshybek",
+      "LATITUDE": 43.455180205966506,
+      "LONGITUDE": 76.97921716865166,
+      "CITY_int": 204
+    },
+    {
+      "CITY": "Krasina",
+      "LATITUDE": 49.942336,
+      "LONGITUDE": 82.663943,
+      "CITY_int": 205
+    },
+    {
+      "CITY": "Krasnyy_partizan",
+      "LATITUDE": 53.08782898387138,
+      "LONGITUDE": 63.84101229721667,
+      "CITY_int": 206
+    },
+    {
+      "CITY": "Krasnyy_yar",
+      "LATITUDE": 53.33171475962851,
+      "LONGITUDE": 69.26600873193925,
+      "CITY_int": 207
+    },
+    {
+      "CITY": "Krugloozernoe",
+      "LATITUDE": 51.074139375,
+      "LONGITUDE": 51.286302875000004,
+      "CITY_int": 208
+    },
+    {
+      "CITY": "Kulan",
+      "LATITUDE": 42.919428693468795,
+      "LONGITUDE": 72.70877795924696,
+      "CITY_int": 209
+    },
+    {
+      "CITY": "Kulenovka",
+      "LATITUDE": 49.65052947368421,
+      "LONGITUDE": 83.02832105263158,
+      "CITY_int": 210
+    },
+    {
+      "CITY": "Kulysary",
+      "LATITUDE": 46.96418170670338,
+      "LONGITUDE": 53.95906972936342,
+      "CITY_int": 211
+    },
+    {
+      "CITY": "Kurashasay",
+      "LATITUDE": 50.2884793706585,
+      "LONGITUDE": 57.054987692337505,
+      "CITY_int": 212
+    },
+    {
+      "CITY": "Kurayly",
+      "LATITUDE": 50.288173785628,
+      "LONGITUDE": 56.552169155753006,
+      "CITY_int": 213
+    },
+    {
+      "CITY": "Kurchatov",
+      "LATITUDE": 50.74617441093292,
+      "LONGITUDE": 78.55596297669128,
+      "CITY_int": 214
+    },
+    {
+      "CITY": "Kurchum",
+      "LATITUDE": 48.563696,
+      "LONGITUDE": 83.643403,
+      "CITY_int": 215
+    },
+    {
+      "CITY": "Kuryk",
+      "LATITUDE": 43.19940681802848,
+      "LONGITUDE": 51.658428985183484,
+      "CITY_int": 216
+    },
+    {
+      "CITY": "Kushoky",
+      "LATITUDE": 50.23269783000786,
+      "LONGITUDE": 73.40024598624932,
+      "CITY_int": 217
+    },
+    {
+      "CITY": "Kyrgauyldy",
+      "LATITUDE": 43.176033533409715,
+      "LONGITUDE": 76.77027183544214,
+      "CITY_int": 218
+    },
+    {
+      "CITY": "Kyzyl-Kaynar",
+      "LATITUDE": 42.838312,
+      "LONGITUDE": 71.516631,
+      "CITY_int": 219
+    },
+    {
+      "CITY": "Kyzyl_Kayrat",
+      "LATITUDE": 43.294434,
+      "LONGITUDE": 77.184013,
+      "CITY_int": 220
+    },
+    {
+      "CITY": "Kyzylorda",
+      "LATITUDE": 44.83258204521582,
+      "LONGITUDE": 65.50567589638494,
+      "CITY_int": 221
+    },
+    {
+      "CITY": "Kyzyltobe",
+      "LATITUDE": 43.69068704548,
+      "LONGITUDE": 51.33327995423633,
+      "CITY_int": 222
+    },
+    {
+      "CITY": "Kyzyltu",
+      "LATITUDE": 43.382781,
+      "LONGITUDE": 77.079332,
+      "CITY_int": 223
+    },
+    {
+      "CITY": "Kyzylzhar",
+      "LATITUDE": 50.9000581675715,
+      "LONGITUDE": 71.36753873571999,
+      "CITY_int": 224
+    },
+    {
+      "CITY": "Lenger",
+      "LATITUDE": 42.182047263767885,
+      "LONGITUDE": 69.87965014735644,
+      "CITY_int": 225
+    },
+    {
+      "CITY": "Leninskiy",
+      "LATITUDE": 52.261578161146,
+      "LONGITUDE": 76.790950598702,
+      "CITY_int": 226
+    },
+    {
+      "CITY": "Lisakovsk",
+      "LATITUDE": 52.54557164834958,
+      "LONGITUDE": 62.492229802006754,
+      "CITY_int": 227
+    },
+    {
+      "CITY": "M__Tuymebaev",
+      "LATITUDE": 43.413943355725245,
+      "LONGITUDE": 76.90215101674869,
+      "CITY_int": 228
+    },
+    {
+      "CITY": "Mahambet",
+      "LATITUDE": 47.663224732031495,
+      "LONGITUDE": 51.57708817822667,
+      "CITY_int": 229
+    },
+    {
+      "CITY": "Makanchi",
+      "LATITUDE": 46.777525,
+      "LONGITUDE": 82.033981,
+      "CITY_int": 230
+    },
+    {
+      "CITY": "Makat",
+      "LATITUDE": 47.64752,
+      "LONGITUDE": 53.34922,
+      "CITY_int": 231
+    },
+    {
+      "CITY": "Makinka",
+      "LATITUDE": 52.631544,
+      "LONGITUDE": 70.43319433333333,
+      "CITY_int": 232
+    },
+    {
+      "CITY": "Makinsk",
+      "LATITUDE": 52.62837377077199,
+      "LONGITUDE": 70.43499880801258,
+      "CITY_int": 233
+    },
+    {
+      "CITY": "Maloubinka",
+      "LATITUDE": 50.44474,
+      "LONGITUDE": 82.664607,
+      "CITY_int": 234
+    },
+    {
+      "CITY": "Malovodnoe",
+      "LATITUDE": 43.51167494605,
+      "LONGITUDE": 77.68762015575,
+      "CITY_int": 235
+    },
+    {
+      "CITY": "Mamlyutka",
+      "LATITUDE": 54.938638,
+      "LONGITUDE": 68.521046,
+      "CITY_int": 236
+    },
+    {
+      "CITY": "Mangistau",
+      "LATITUDE": 43.66842966904892,
+      "LONGITUDE": 51.308988628201256,
+      "CITY_int": 237
+    },
+    {
+      "CITY": "Mangyshlak",
+      "LATITUDE": 43.781869478910025,
+      "LONGITUDE": 51.799166156335524,
+      "CITY_int": 238
+    },
+    {
+      "CITY": "Martuk",
+      "LATITUDE": 50.74998769822,
+      "LONGITUDE": 56.50912757206457,
+      "CITY_int": 239
+    },
+    {
+      "CITY": "Maykayyn",
+      "LATITUDE": 51.45736670627997,
+      "LONGITUDE": 75.79434854832395,
+      "CITY_int": 240
+    },
+    {
+      "CITY": "Maykoly",
+      "LATITUDE": 53.28603,
+      "LONGITUDE": 63.337192,
+      "CITY_int": 241
+    },
+    {
+      "CITY": "Maytobe",
+      "LATITUDE": 42.768631077287,
+      "LONGITUDE": 70.41510713558151,
+      "CITY_int": 242
+    },
+    {
+      "CITY": "Menovnoe",
+      "LATITUDE": 49.938363800000005,
+      "LONGITUDE": 82.57424940000001,
+      "CITY_int": 243
+    },
+    {
+      "CITY": "Merey_(Selektsiya)",
+      "LATITUDE": 43.33359200097048,
+      "LONGITUDE": 76.71524737355921,
+      "CITY_int": 244
+    },
+    {
+      "CITY": "Merke",
+      "LATITUDE": 42.86757008960587,
+      "LONGITUDE": 73.1940811570164,
+      "CITY_int": 245
+    },
+    {
+      "CITY": "Mezhdurechensk",
+      "LATITUDE": 43.7119176214948,
+      "LONGITUDE": 76.54020859398514,
+      "CITY_int": 246
+    },
+    {
+      "CITY": "Michurinskoe",
+      "LATITUDE": 52.34893800415941,
+      "LONGITUDE": 58.32989912221177,
+      "CITY_int": 247
+    },
+    {
+      "CITY": "Molodezhnyy",
+      "LATITUDE": 50.722255335520806,
+      "LONGITUDE": 73.52618842116806,
+      "CITY_int": 248
+    },
+    {
+      "CITY": "Moyyldy",
+      "LATITUDE": 52.39176369377195,
+      "LONGITUDE": 77.0661429162644,
+      "CITY_int": 249
+    },
+    {
+      "CITY": "Mynbaevo",
+      "LATITUDE": 43.242268564000845,
+      "LONGITUDE": 76.07682403985159,
+      "CITY_int": 250
+    },
+    {
+      "CITY": "Myrzakent",
+      "LATITUDE": 40.66778746132217,
+      "LONGITUDE": 68.539071522402,
+      "CITY_int": 251
+    },
+    {
+      "CITY": "Naberezhnoe",
+      "LATITUDE": 53.240301010657,
+      "LONGITUDE": 63.610905242903,
+      "CITY_int": 252
+    },
+    {
+      "CITY": "Nauchnyy",
+      "LATITUDE": 51.675365199999995,
+      "LONGITUDE": 71.01416272,
+      "CITY_int": 253
+    },
+    {
+      "CITY": "Novaya_Buhtarma",
+      "LATITUDE": 49.62921685108184,
+      "LONGITUDE": 83.51408365187984,
+      "CITY_int": 254
+    },
+    {
+      "CITY": "Novaya_Sogra",
+      "LATITUDE": 50.0279233416784,
+      "LONGITUDE": 82.7335945689191,
+      "CITY_int": 255
+    },
+    {
+      "CITY": "Novenykiy",
+      "LATITUDE": 51.305262212564244,
+      "LONGITUDE": 51.48279420246469,
+      "CITY_int": 256
+    },
+    {
+      "CITY": "Novo-Ahmirovo",
+      "LATITUDE": 49.9368859952079,
+      "LONGITUDE": 82.49980351682164,
+      "CITY_int": 257
+    },
+    {
+      "CITY": "Novocherkasskoe",
+      "LATITUDE": 51.420265,
+      "LONGITUDE": 69.881814,
+      "CITY_int": 258
+    },
+    {
+      "CITY": "Novodolinsk",
+      "LATITUDE": 49.65989004091264,
+      "LONGITUDE": 72.82084667267135,
+      "CITY_int": 259
+    },
+    {
+      "CITY": "Novoishimka",
+      "LATITUDE": 51.29684616666666,
+      "LONGITUDE": 70.72553,
+      "CITY_int": 260
+    },
+    {
+      "CITY": "Novoishimskoe",
+      "LATITUDE": 53.18547755688576,
+      "LONGITUDE": 66.88368398333172,
+      "CITY_int": 261
+    },
+    {
+      "CITY": "Novopavlovka",
+      "LATITUDE": 54.852800248859,
+      "LONGITUDE": 69.115721546863,
+      "CITY_int": 262
+    },
+    {
+      "CITY": "Novyy",
+      "LATITUDE": 50.30518625,
+      "LONGITUDE": 57.13181,
+      "CITY_int": 263
+    },
+    {
+      "CITY": "Nur-Sultan_(Astana)",
+      "LATITUDE": 51.136099822411836,
+      "LONGITUDE": 71.4336530832138,
+      "CITY_int": 264
+    },
+    {
+      "CITY": "Nura",
+      "LATITUDE": 44.195539,
+      "LONGITUDE": 76.213006,
+      "CITY_int": 265
+    },
+    {
+      "CITY": "Oktyabryskiy",
+      "LATITUDE": 52.3334960617222,
+      "LONGITUDE": 64.6148894139712,
+      "CITY_int": 266
+    },
+    {
+      "CITY": "Oktyabryskoe",
+      "LATITUDE": 53.213621555555555,
+      "LONGITUDE": 63.87165711111111,
+      "CITY_int": 267
+    },
+    {
+      "CITY": "Okzhetpes",
+      "LATITUDE": 52.543604969413195,
+      "LONGITUDE": 70.45415689865861,
+      "CITY_int": 268
+    },
+    {
+      "CITY": "Opytnoe_pole",
+      "LATITUDE": 50.03205373164105,
+      "LONGITUDE": 82.54817671325095,
+      "CITY_int": 269
+    },
+    {
+      "CITY": "Osakarovka",
+      "LATITUDE": 50.56741705574014,
+      "LONGITUDE": 72.57507304469381,
+      "CITY_int": 270
+    },
+    {
+      "CITY": "Otar",
+      "LATITUDE": 43.534929,
+      "LONGITUDE": 75.212983,
+      "CITY_int": 271
+    },
+    {
+      "CITY": "Otegen_batyr",
+      "LATITUDE": 43.419435195187766,
+      "LONGITUDE": 77.02567019455127,
+      "CITY_int": 272
+    },
+    {
+      "CITY": "Panfilovo_(Tabaksovhoz)",
+      "LATITUDE": 43.38505994504997,
+      "LONGITUDE": 77.11657707467644,
+      "CITY_int": 273
+    },
+    {
+      "CITY": "Pavlodar",
+      "LATITUDE": 52.27332984754397,
+      "LONGITUDE": 76.95760463101088,
+      "CITY_int": 274
+    },
+    {
+      "CITY": "Pavlodarskoe",
+      "LATITUDE": 52.390087844671996,
+      "LONGITUDE": 76.8600767521495,
+      "CITY_int": 275
+    },
+    {
+      "CITY": "Peremetnoe",
+      "LATITUDE": 51.19853980091982,
+      "LONGITUDE": 50.863969743932905,
+      "CITY_int": 276
+    },
+    {
+      "CITY": "Peterfelyd",
+      "LATITUDE": 54.90874449781356,
+      "LONGITUDE": 68.85990099462089,
+      "CITY_int": 277
+    },
+    {
+      "CITY": "Petropavlovka",
+      "LATITUDE": 50.537679,
+      "LONGITUDE": 57.44898700000001,
+      "CITY_int": 278
+    },
+    {
+      "CITY": "Petropavlovsk",
+      "LATITUDE": 54.878469911247024,
+      "LONGITUDE": 69.14702645927322,
+      "CITY_int": 279
+    },
+    {
+      "CITY": "Petrovka",
+      "LATITUDE": 50.092280570061,
+      "LONGITUDE": 73.498820764214,
+      "CITY_int": 280
+    },
+    {
+      "CITY": "Podstepnoe",
+      "LATITUDE": 51.158138102927076,
+      "LONGITUDE": 51.50119901635066,
+      "CITY_int": 281
+    },
+    {
+      "CITY": "Praporshtikovo",
+      "LATITUDE": 50.044671,
+      "LONGITUDE": 82.464768,
+      "CITY_int": 282
+    },
+    {
+      "CITY": "Predgornoe",
+      "LATITUDE": 50.24951293595785,
+      "LONGITUDE": 82.25301715692014,
+      "CITY_int": 283
+    },
+    {
+      "CITY": "Presnovka",
+      "LATITUDE": 54.668880333333334,
+      "LONGITUDE": 67.14969633333334,
+      "CITY_int": 284
+    },
+    {
+      "CITY": "Pribrezhnoe",
+      "LATITUDE": 54.819876,
+      "LONGITUDE": 69.087704,
+      "CITY_int": 285
+    },
+    {
+      "CITY": "Pribrezhnyy",
+      "LATITUDE": 49.655567212546,
+      "LONGITUDE": 83.760497187689,
+      "CITY_int": 286
+    },
+    {
+      "CITY": "Prigorodnoe",
+      "LATITUDE": 51.785624,
+      "LONGITUDE": 70.26023,
+      "CITY_int": 287
+    },
+    {
+      "CITY": "Prioziorsk",
+      "LATITUDE": 46.02913479164139,
+      "LONGITUDE": 73.70321200140572,
+      "CITY_int": 288
+    },
+    {
+      "CITY": "Progress",
+      "LATITUDE": 50.134398,
+      "LONGITUDE": 82.392023,
+      "CITY_int": 289
+    },
+    {
+      "CITY": "Raduzhnoe",
+      "LATITUDE": 50.05047078354008,
+      "LONGITUDE": 82.71448951770523,
+      "CITY_int": 290
+    },
+    {
+      "CITY": "Rassvet",
+      "LATITUDE": 54.475202,
+      "LONGITUDE": 68.692211,
+      "CITY_int": 291
+    },
+    {
+      "CITY": "Rayymbek",
+      "LATITUDE": 43.2242601032335,
+      "LONGITUDE": 76.80373745415625,
+      "CITY_int": 292
+    },
+    {
+      "CITY": "Ridder",
+      "LATITUDE": 50.32874625851338,
+      "LONGITUDE": 83.49012692002898,
+      "CITY_int": 293
+    },
+    {
+      "CITY": "Rudnyy",
+      "LATITUDE": 52.9657947577619,
+      "LONGITUDE": 63.10653863030846,
+      "CITY_int": 294
+    },
+    {
+      "CITY": "S_Shapagatova",
+      "LATITUDE": 44.710255625,
+      "LONGITUDE": 54.274374875,
+      "CITY_int": 295
+    },
+    {
+      "CITY": "Sadchikova",
+      "LATITUDE": 53.6494854154201,
+      "LONGITUDE": 62.784755722288594,
+      "CITY_int": 296
+    },
+    {
+      "CITY": "Sadovoe",
+      "LATITUDE": 53.134186734237545,
+      "LONGITUDE": 64.62622126788746,
+      "CITY_int": 297
+    },
+    {
+      "CITY": "Samarskoe",
+      "LATITUDE": 49.0215829439335,
+      "LONGITUDE": 83.35703824381413,
+      "CITY_int": 298
+    },
+    {
+      "CITY": "Sarany",
+      "LATITUDE": 49.80255851433113,
+      "LONGITUDE": 72.83427949160541,
+      "CITY_int": 299
+    },
+    {
+      "CITY": "Sarkand",
+      "LATITUDE": 45.142237942675266,
+      "LONGITUDE": 79.54726745651715,
+      "CITY_int": 300
+    },
+    {
+      "CITY": "Saryagash",
+      "LATITUDE": 41.46230954090533,
+      "LONGITUDE": 69.1670040512053,
+      "CITY_int": 301
+    },
+    {
+      "CITY": "Sarykemer",
+      "LATITUDE": 43.001708655076044,
+      "LONGITUDE": 71.50406675118464,
+      "CITY_int": 302
+    },
+    {
+      "CITY": "Sarykoly",
+      "LATITUDE": 53.31076616666667,
+      "LONGITUDE": 65.54768716666666,
+      "CITY_int": 303
+    },
+    {
+      "CITY": "Saryoba",
+      "LATITUDE": 51.24685768634825,
+      "LONGITUDE": 72.13604566717525,
+      "CITY_int": 304
+    },
+    {
+      "CITY": "Saryozek",
+      "LATITUDE": 44.354721113196604,
+      "LONGITUDE": 77.9693104131796,
+      "CITY_int": 305
+    },
+    {
+      "CITY": "Saryshagan",
+      "LATITUDE": 46.115944,
+      "LONGITUDE": 73.615356,
+      "CITY_int": 306
+    },
+    {
+      "CITY": "Sastobe",
+      "LATITUDE": 42.550244765593,
+      "LONGITUDE": 70.008432817415,
+      "CITY_int": 307
+    },
+    {
+      "CITY": "Satpaev",
+      "LATITUDE": 47.908661529620495,
+      "LONGITUDE": 67.53668220573662,
+      "CITY_int": 308
+    },
+    {
+      "CITY": "Saumalkoly",
+      "LATITUDE": 53.286846806591214,
+      "LONGITUDE": 68.11304630432805,
+      "CITY_int": 309
+    },
+    {
+      "CITY": "Saymasay",
+      "LATITUDE": 43.438745953434,
+      "LONGITUDE": 77.3292020813715,
+      "CITY_int": 310
+    },
+    {
+      "CITY": "Sazda",
+      "LATITUDE": 49.97358328571428,
+      "LONGITUDE": 58.17431799999999,
+      "CITY_int": 311
+    },
+    {
+      "CITY": "Sekisovka",
+      "LATITUDE": 50.325641,
+      "LONGITUDE": 82.587792,
+      "CITY_int": 312
+    },
+    {
+      "CITY": "Semey",
+      "LATITUDE": 50.4031773217602,
+      "LONGITUDE": 80.2340218862243,
+      "CITY_int": 313
+    },
+    {
+      "CITY": "Serebryansk",
+      "LATITUDE": 49.68120980887551,
+      "LONGITUDE": 83.27993967092502,
+      "CITY_int": 314
+    },
+    {
+      "CITY": "Sergeevka",
+      "LATITUDE": 54.115157619149905,
+      "LONGITUDE": 68.125260763847,
+      "CITY_int": 315
+    },
+    {
+      "CITY": "Shagaly",
+      "LATITUDE": 53.285650335917,
+      "LONGITUDE": 69.29563932705099,
+      "CITY_int": 316
+    },
+    {
+      "CITY": "Shahan",
+      "LATITUDE": 49.817199171611165,
+      "LONGITUDE": 72.65728559818446,
+      "CITY_int": 317
+    },
+    {
+      "CITY": "Shahtinsk",
+      "LATITUDE": 49.702918035088615,
+      "LONGITUDE": 72.59244370821891,
+      "CITY_int": 318
+    },
+    {
+      "CITY": "Shalkar",
+      "LATITUDE": 43.721605951595635,
+      "LONGITUDE": 76.148778682334,
+      "CITY_int": 319
+    },
+    {
+      "CITY": "Shamalgan",
+      "LATITUDE": 43.19993198500506,
+      "LONGITUDE": 76.54233695627084,
+      "CITY_int": 320
+    },
+    {
+      "CITY": "Shantobe",
+      "LATITUDE": 52.456358,
+      "LONGITUDE": 68.169248,
+      "CITY_int": 321
+    },
+    {
+      "CITY": "Sharbakty",
+      "LATITUDE": 52.484737846509844,
+      "LONGITUDE": 78.1386782899316,
+      "CITY_int": 322
+    },
+    {
+      "CITY": "Shardara",
+      "LATITUDE": 41.25401062249871,
+      "LONGITUDE": 67.9767466627507,
+      "CITY_int": 323
+    },
+    {
+      "CITY": "Shashubay",
+      "LATITUDE": 46.80525746691073,
+      "LONGITUDE": 75.027431249171,
+      "CITY_int": 324
+    },
+    {
+      "CITY": "Shaulyder",
+      "LATITUDE": 42.782711422878,
+      "LONGITUDE": 68.377913014542,
+      "CITY_int": 325
+    },
+    {
+      "CITY": "Shaykoryk",
+      "LATITUDE": 42.951665,
+      "LONGITUDE": 71.334561,
+      "CITY_int": 326
+    },
+    {
+      "CITY": "Shelek",
+      "LATITUDE": 43.58922763066903,
+      "LONGITUDE": 78.22295500742547,
+      "CITY_int": 327
+    },
+    {
+      "CITY": "Shemonaiha",
+      "LATITUDE": 50.6290291911447,
+      "LONGITUDE": 81.92963817356923,
+      "CITY_int": 328
+    },
+    {
+      "CITY": "Shet",
+      "LATITUDE": 46.31754812431725,
+      "LONGITUDE": 72.31710759755325,
+      "CITY_int": 329
+    },
+    {
+      "CITY": "Shetpe",
+      "LATITUDE": 44.139828,
+      "LONGITUDE": 52.169211,
+      "CITY_int": 330
+    },
+    {
+      "CITY": "Shiderty",
+      "LATITUDE": 51.71377832717025,
+      "LONGITUDE": 74.68006884893113,
+      "CITY_int": 331
+    },
+    {
+      "CITY": "Shieli",
+      "LATITUDE": 44.19420125450719,
+      "LONGITUDE": 66.72805361445903,
+      "CITY_int": 332
+    },
+    {
+      "CITY": "Sholakkorgan",
+      "LATITUDE": 43.86572426118,
+      "LONGITUDE": 68.758469552635,
+      "CITY_int": 333
+    },
+    {
+      "CITY": "Shortandy",
+      "LATITUDE": 51.66839489344891,
+      "LONGITUDE": 71.03160330790098,
+      "CITY_int": 334
+    },
+    {
+      "CITY": "Shtapovo",
+      "LATITUDE": 51.064177288502,
+      "LONGITUDE": 51.22594978027,
+      "CITY_int": 335
+    },
+    {
+      "CITY": "Shtuchinsk",
+      "LATITUDE": 52.93892565111559,
+      "LONGITUDE": 70.2097874388561,
+      "CITY_int": 336
+    },
+    {
+      "CITY": "Shu",
+      "LATITUDE": 43.61560947289561,
+      "LONGITUDE": 73.72538650908777,
+      "CITY_int": 337
+    },
+    {
+      "CITY": "Shubarkuduk",
+      "LATITUDE": 49.145412818416666,
+      "LONGITUDE": 56.49152441449066,
+      "CITY_int": 338
+    },
+    {
+      "CITY": "Shubarsu",
+      "LATITUDE": 42.485874975233,
+      "LONGITUDE": 69.390774924059,
+      "CITY_int": 339
+    },
+    {
+      "CITY": "Shulybinsk",
+      "LATITUDE": 50.36528268293122,
+      "LONGITUDE": 81.42755540231015,
+      "CITY_int": 340
+    },
+    {
+      "CITY": "Shymkent",
+      "LATITUDE": 42.3468155702546,
+      "LONGITUDE": 69.61824353720556,
+      "CITY_int": 341
+    },
+    {
+      "CITY": "Shyngyrlau",
+      "LATITUDE": 51.101802,
+      "LONGITUDE": 54.085156,
+      "CITY_int": 342
+    },
+    {
+      "CITY": "Smirnovo",
+      "LATITUDE": 54.5126115,
+      "LONGITUDE": 69.4047865,
+      "CITY_int": 343
+    },
+    {
+      "CITY": "Solnechnyy",
+      "LATITUDE": 52.03694481531412,
+      "LONGITUDE": 75.4734832556073,
+      "CITY_int": 344
+    },
+    {
+      "CITY": "Sortirovka",
+      "LATITUDE": 49.844118817797764,
+      "LONGITUDE": 73.33806821061295,
+      "CITY_int": 345
+    },
+    {
+      "CITY": "Stantsionnyy",
+      "LATITUDE": 53.34447346552058,
+      "LONGITUDE": 69.52356340860665,
+      "CITY_int": 346
+    },
+    {
+      "CITY": "Stepnogorsk",
+      "LATITUDE": 52.34651892148775,
+      "LONGITUDE": 71.87432473589513,
+      "CITY_int": 347
+    },
+    {
+      "CITY": "Stepnyak",
+      "LATITUDE": 52.558929738565126,
+      "LONGITUDE": 71.29881193596512,
+      "CITY_int": 348
+    },
+    {
+      "CITY": "Talapker",
+      "LATITUDE": 51.243437,
+      "LONGITUDE": 71.171274,
+      "CITY_int": 349
+    },
+    {
+      "CITY": "Taldykoly",
+      "LATITUDE": 51.392719,
+      "LONGITUDE": 61.985731,
+      "CITY_int": 350
+    },
+    {
+      "CITY": "Taldykorgan",
+      "LATITUDE": 45.00985300706736,
+      "LONGITUDE": 78.35688586396743,
+      "CITY_int": 351
+    },
+    {
+      "CITY": "Talgar",
+      "LATITUDE": 43.31843037844199,
+      "LONGITUDE": 77.22962811439045,
+      "CITY_int": 352
+    },
+    {
+      "CITY": "Taranovskoe",
+      "LATITUDE": 52.833125800000005,
+      "LONGITUDE": 62.518558600000006,
+      "CITY_int": 353
+    },
+    {
+      "CITY": "Taraz",
+      "LATITUDE": 42.896905558203905,
+      "LONGITUDE": 71.35595352967881,
+      "CITY_int": 354
+    },
+    {
+      "CITY": "Tarhanka",
+      "LATITUDE": 49.86751152425957,
+      "LONGITUDE": 83.18144384833144,
+      "CITY_int": 355
+    },
+    {
+      "CITY": "Tasboget",
+      "LATITUDE": 44.773142439502045,
+      "LONGITUDE": 65.54747644327182,
+      "CITY_int": 356
+    },
+    {
+      "CITY": "Taskala",
+      "LATITUDE": 51.10643890909091,
+      "LONGITUDE": 50.28556954545454,
+      "CITY_int": 357
+    },
+    {
+      "CITY": "Tavricheskoe",
+      "LATITUDE": 50.166558896143,
+      "LONGITUDE": 82.0442703919725,
+      "CITY_int": 358
+    },
+    {
+      "CITY": "Tayynsha",
+      "LATITUDE": 53.85260381264466,
+      "LONGITUDE": 69.77950792935057,
+      "CITY_int": 359
+    },
+    {
+      "CITY": "Tekeli",
+      "LATITUDE": 44.86341681580795,
+      "LONGITUDE": 78.76125948729468,
+      "CITY_int": 360
+    },
+    {
+      "CITY": "Temirlanovka",
+      "LATITUDE": 42.6041793673858,
+      "LONGITUDE": 69.26070876581613,
+      "CITY_int": 361
+    },
+    {
+      "CITY": "Temirtau",
+      "LATITUDE": 50.055536326734305,
+      "LONGITUDE": 72.96518393556603,
+      "CITY_int": 362
+    },
+    {
+      "CITY": "Terekty",
+      "LATITUDE": 44.036686720264846,
+      "LONGITUDE": 75.11916002240176,
+      "CITY_int": 363
+    },
+    {
+      "CITY": "Terenkoly",
+      "LATITUDE": 53.060046125,
+      "LONGITUDE": 76.11259325,
+      "CITY_int": 364
+    },
+    {
+      "CITY": "Terenozek",
+      "LATITUDE": 45.054856,
+      "LONGITUDE": 64.986463,
+      "CITY_int": 365
+    },
+    {
+      "CITY": "Timiryazevo",
+      "LATITUDE": 53.747224409967,
+      "LONGITUDE": 66.501939948286,
+      "CITY_int": 366
+    },
+    {
+      "CITY": "Tobol",
+      "LATITUDE": 53.02209550653972,
+      "LONGITUDE": 63.30100713603802,
+      "CITY_int": 367
+    },
+    {
+      "CITY": "Tole_bi",
+      "LATITUDE": 43.09552330538813,
+      "LONGITUDE": 71.94570116733438,
+      "CITY_int": 368
+    },
+    {
+      "CITY": "Tonkeris",
+      "LATITUDE": 43.476975488899754,
+      "LONGITUDE": 77.13934797975737,
+      "CITY_int": 369
+    },
+    {
+      "CITY": "Topar",
+      "LATITUDE": 49.512736453834854,
+      "LONGITUDE": 72.83473644585794,
+      "CITY_int": 370
+    },
+    {
+      "CITY": "Tortkuduk",
+      "LATITUDE": 51.684324985865,
+      "LONGITUDE": 74.298939264247,
+      "CITY_int": 371
+    },
+    {
+      "CITY": "Trekino",
+      "LATITUDE": 51.286202,
+      "LONGITUDE": 51.589825,
+      "CITY_int": 372
+    },
+    {
+      "CITY": "Tsentralynoe",
+      "LATITUDE": 49.677045,
+      "LONGITUDE": 73.249086,
+      "CITY_int": 373
+    },
+    {
+      "CITY": "Turgen",
+      "LATITUDE": 43.32318903169573,
+      "LONGITUDE": 77.63593607986947,
+      "CITY_int": 374
+    },
+    {
+      "CITY": "Turkestan",
+      "LATITUDE": 43.28632862116029,
+      "LONGITUDE": 68.31538594497509,
+      "CITY_int": 375
+    },
+    {
+      "CITY": "Turksib",
+      "LATITUDE": 42.8302088295085,
+      "LONGITUDE": 71.394727304983,
+      "CITY_int": 376
+    },
+    {
+      "CITY": "Tuymekent",
+      "LATITUDE": 43.133973,
+      "LONGITUDE": 71.631517,
+      "CITY_int": 377
+    },
+    {
+      "CITY": "Tuzdybastau_(Kalinino)",
+      "LATITUDE": 43.331941489143155,
+      "LONGITUDE": 77.06432431948642,
+      "CITY_int": 378
+    },
+    {
+      "CITY": "Tyulykubas",
+      "LATITUDE": 42.51827600428725,
+      "LONGITUDE": 70.24539536415826,
+      "CITY_int": 379
+    },
+    {
+      "CITY": "Uil",
+      "LATITUDE": 49.074441,
+      "LONGITUDE": 54.665629,
+      "CITY_int": 380
+    },
+    {
+      "CITY": "Ulken_Naryn",
+      "LATITUDE": 49.21317615170205,
+      "LONGITUDE": 84.50984433883595,
+      "CITY_int": 381
+    },
+    {
+      "CITY": "Ulyken",
+      "LATITUDE": 45.20894328669157,
+      "LONGITUDE": 73.98494856665114,
+      "CITY_int": 382
+    },
+    {
+      "CITY": "Umbetali",
+      "LATITUDE": 43.259979893686754,
+      "LONGITUDE": 76.35754533951025,
+      "CITY_int": 383
+    },
+    {
+      "CITY": "Umirzak",
+      "LATITUDE": 43.606332914963126,
+      "LONGITUDE": 51.23134608174128,
+      "CITY_int": 384
+    },
+    {
+      "CITY": "Ungurtas",
+      "LATITUDE": 43.532114517793694,
+      "LONGITUDE": 74.56206554150484,
+      "CITY_int": 385
+    },
+    {
+      "CITY": "Uralysk",
+      "LATITUDE": 51.2252224058229,
+      "LONGITUDE": 51.41582134467127,
+      "CITY_int": 386
+    },
+    {
+      "CITY": "Urdzhar",
+      "LATITUDE": 47.073442115385376,
+      "LONGITUDE": 81.63448344317777,
+      "CITY_int": 387
+    },
+    {
+      "CITY": "Ushanovo",
+      "LATITUDE": 49.966923518859495,
+      "LONGITUDE": 82.74164763913983,
+      "CITY_int": 388
+    },
+    {
+      "CITY": "Usharal",
+      "LATITUDE": 46.11189780145042,
+      "LONGITUDE": 80.82449141549874,
+      "CITY_int": 389
+    },
+    {
+      "CITY": "Ushtobe",
+      "LATITUDE": 46.474894988575805,
+      "LONGITUDE": 76.69369510353762,
+      "CITY_int": 390
+    },
+    {
+      "CITY": "Uspenka",
+      "LATITUDE": 52.898120799999994,
+      "LONGITUDE": 77.41735200000001,
+      "CITY_int": 391
+    },
+    {
+      "CITY": "Usty-Kamenogorsk",
+      "LATITUDE": 49.942890489740456,
+      "LONGITUDE": 82.6136882010958,
+      "CITY_int": 392
+    },
+    {
+      "CITY": "Uzunkoly",
+      "LATITUDE": 54.036509,
+      "LONGITUDE": 65.342484,
+      "CITY_int": 393
+    },
+    {
+      "CITY": "Uzynagash",
+      "LATITUDE": 43.22422355642954,
+      "LONGITUDE": 76.30210422554313,
+      "CITY_int": 394
+    },
+    {
+      "CITY": "Vinnoe",
+      "LATITUDE": 50.0556457220876,
+      "LONGITUDE": 82.8423007012112,
+      "CITY_int": 395
+    },
+    {
+      "CITY": "Vladimirovka",
+      "LATITUDE": 53.467525,
+      "LONGITUDE": 64.014872,
+      "CITY_int": 396
+    },
+    {
+      "CITY": "Volgodonovka",
+      "LATITUDE": 51.0325444483935,
+      "LONGITUDE": 71.913026801712,
+      "CITY_int": 397
+    },
+    {
+      "CITY": "Voroshilovka",
+      "LATITUDE": 53.147439,
+      "LONGITUDE": 63.596958,
+      "CITY_int": 398
+    },
+    {
+      "CITY": "Vozdvizhenka",
+      "LATITUDE": 51.212427,
+      "LONGITUDE": 71.114824,
+      "CITY_int": 399
+    },
+    {
+      "CITY": "Yakory",
+      "LATITUDE": 54.926017261236495,
+      "LONGITUDE": 69.07786471021049,
+      "CITY_int": 400
+    },
+    {
+      "CITY": "Yasnoe",
+      "LATITUDE": 48.605976,
+      "LONGITUDE": 58.593719,
+      "CITY_int": 401
+    },
+    {
+      "CITY": "Yavlenka",
+      "LATITUDE": 54.337831,
+      "LONGITUDE": 68.457033,
+      "CITY_int": 402
+    },
+    {
+      "CITY": "Yubileynoe",
+      "LATITUDE": 52.936895412263006,
+      "LONGITUDE": 63.050103449346,
+      "CITY_int": 403
+    },
+    {
+      "CITY": "Yuzhnyy",
+      "LATITUDE": 49.311222131464504,
+      "LONGITUDE": 72.8980561293148,
+      "CITY_int": 404
+    },
+    {
+      "CITY": "Zachagansk",
+      "LATITUDE": 51.182318722683576,
+      "LONGITUDE": 51.303914569540545,
+      "CITY_int": 405
+    },
+    {
+      "CITY": "Zarechnoe",
+      "LATITUDE": 50.72862241582384,
+      "LONGITUDE": 67.2324471293516,
+      "CITY_int": 406
+    },
+    {
+      "CITY": "Zarechnyy",
+      "LATITUDE": 50.291064,
+      "LONGITUDE": 57.289567500000004,
+      "CITY_int": 407
+    },
+    {
+      "CITY": "Zatobolysk_(Tobyl)",
+      "LATITUDE": 53.20275801153755,
+      "LONGITUDE": 63.701515778815654,
+      "CITY_int": 408
+    },
+    {
+      "CITY": "Zavodskoy",
+      "LATITUDE": 52.391452893723,
+      "LONGITUDE": 71.69349423093462,
+      "CITY_int": 409
+    },
+    {
+      "CITY": "Zaysan",
+      "LATITUDE": 47.472554835051575,
+      "LONGITUDE": 84.87799771409932,
+      "CITY_int": 410
+    },
+    {
+      "CITY": "Zelenyy_bor",
+      "LATITUDE": 52.88676209350263,
+      "LONGITUDE": 70.53474240475738,
+      "CITY_int": 411
+    },
+    {
+      "CITY": "Zerenda",
+      "LATITUDE": 52.90780664660607,
+      "LONGITUDE": 69.1526617980187,
+      "CITY_int": 412
+    },
+    {
+      "CITY": "Zhaksy",
+      "LATITUDE": 51.91403012684867,
+      "LONGITUDE": 67.30441181397467,
+      "CITY_int": 413
+    },
+    {
+      "CITY": "Zhalagash",
+      "LATITUDE": 45.078021990594,
+      "LONGITUDE": 64.679895995927,
+      "CITY_int": 414
+    },
+    {
+      "CITY": "Zhalpaksay",
+      "LATITUDE": 43.23280552510914,
+      "LONGITUDE": 76.68040996571494,
+      "CITY_int": 415
+    },
+    {
+      "CITY": "Zhalpaktobe",
+      "LATITUDE": 42.8570737237435,
+      "LONGITUDE": 71.44255940283,
+      "CITY_int": 416
+    },
+    {
+      "CITY": "Zhaltyr",
+      "LATITUDE": 51.629366,
+      "LONGITUDE": 69.834644,
+      "CITY_int": 417
+    },
+    {
+      "CITY": "Zhambyl",
+      "LATITUDE": 52.30014106687326,
+      "LONGITUDE": 65.16581462982701,
+      "CITY_int": 418
+    },
+    {
+      "CITY": "Zhambyl_(Zhambylskiy_rayon)",
+      "LATITUDE": 43.272499514253504,
+      "LONGITUDE": 76.267785132613,
+      "CITY_int": 419
+    },
+    {
+      "CITY": "Zhana_Kuat",
+      "LATITUDE": 43.400542448068045,
+      "LONGITUDE": 77.03011643263115,
+      "CITY_int": 420
+    },
+    {
+      "CITY": "Zhanaarka",
+      "LATITUDE": 49.182615999999996,
+      "LONGITUDE": 72.4469355,
+      "CITY_int": 421
+    },
+    {
+      "CITY": "Zhanakonys",
+      "LATITUDE": 50.00858760573446,
+      "LONGITUDE": 57.16887677111967,
+      "CITY_int": 422
+    },
+    {
+      "CITY": "Zhanakurylys",
+      "LATITUDE": 43.3184338104075,
+      "LONGITUDE": 76.6677166298595,
+      "CITY_int": 423
+    },
+    {
+      "CITY": "Zhanaozen",
+      "LATITUDE": 43.36495358783474,
+      "LONGITUDE": 52.91536110841364,
+      "CITY_int": 424
+    },
+    {
+      "CITY": "Zhanatas",
+      "LATITUDE": 43.580950217151965,
+      "LONGITUDE": 69.79797552347634,
+      "CITY_int": 425
+    },
+    {
+      "CITY": "Zhanaturmys",
+      "LATITUDE": 43.173678055778,
+      "LONGITUDE": 76.783480480767,
+      "CITY_int": 426
+    },
+    {
+      "CITY": "Zhangala",
+      "LATITUDE": 49.21312290909091,
+      "LONGITUDE": 50.292452272727274,
+      "CITY_int": 427
+    },
+    {
+      "CITY": "Zhansugurov",
+      "LATITUDE": 45.400966,
+      "LONGITUDE": 79.503643,
+      "CITY_int": 428
+    },
+    {
+      "CITY": "Zhapek_batyr",
+      "LATITUDE": 43.417855198725164,
+      "LONGITUDE": 76.90270888628959,
+      "CITY_int": 429
+    },
+    {
+      "CITY": "Zharkent",
+      "LATITUDE": 44.17608371557696,
+      "LONGITUDE": 80.00496088226366,
+      "CITY_int": 430
+    },
+    {
+      "CITY": "Zhastar-2",
+      "LATITUDE": 44.212947,
+      "LONGITUDE": 80.01879,
+      "CITY_int": 431
+    },
+    {
+      "CITY": "Zhaugashty",
+      "LATITUDE": 43.40682538285115,
+      "LONGITUDE": 76.69913078543826,
+      "CITY_int": 432
+    },
+    {
+      "CITY": "Zhayrem",
+      "LATITUDE": 49.244357833823344,
+      "LONGITUDE": 71.71442264544832,
+      "CITY_int": 433
+    },
+    {
+      "CITY": "Zhelaevo",
+      "LATITUDE": 51.26041603499631,
+      "LONGITUDE": 51.49691783753138,
+      "CITY_int": 434
+    },
+    {
+      "CITY": "Zhelezinka",
+      "LATITUDE": 53.54143384502531,
+      "LONGITUDE": 75.31338303560523,
+      "CITY_int": 435
+    },
+    {
+      "CITY": "Zhetekshi",
+      "LATITUDE": 52.317882,
+      "LONGITUDE": 77.134848,
+      "CITY_int": 436
+    },
+    {
+      "CITY": "Zhetybay",
+      "LATITUDE": 43.68765,
+      "LONGITUDE": 51.209253,
+      "CITY_int": 437
+    },
+    {
+      "CITY": "Zhetygen",
+      "LATITUDE": 43.67280793053197,
+      "LONGITUDE": 77.11246483309866,
+      "CITY_int": 438
+    },
+    {
+      "CITY": "Zhetysay",
+      "LATITUDE": 40.78513105556994,
+      "LONGITUDE": 68.33764145173362,
+      "CITY_int": 439
+    },
+    {
+      "CITY": "Zhezkazgan",
+      "LATITUDE": 47.79900421076182,
+      "LONGITUDE": 67.70674722430927,
+      "CITY_int": 440
+    },
+    {
+      "CITY": "Zhezkent",
+      "LATITUDE": 50.619662215614575,
+      "LONGITUDE": 81.98619615398636,
+      "CITY_int": 441
+    },
+    {
+      "CITY": "Zhibek_Zholy",
+      "LATITUDE": 42.89957280781837,
+      "LONGITUDE": 74.814594812954,
+      "CITY_int": 442
+    },
+    {
+      "CITY": "Zhibek_zholy",
+      "LATITUDE": 50.49181147493221,
+      "LONGITUDE": 72.12236689270489,
+      "CITY_int": 443
+    },
+    {
+      "CITY": "Zhitikara",
+      "LATITUDE": 52.18345226069757,
+      "LONGITUDE": 61.19766872251015,
+      "CITY_int": 444
+    },
+    {
+      "CITY": "Zholymbet",
+      "LATITUDE": 51.742687000000004,
+      "LONGITUDE": 71.711431,
+      "CITY_int": 445
+    },
+    {
+      "CITY": "Zhuldyz",
+      "LATITUDE": 47.1429679932562,
+      "LONGITUDE": 51.96961536805533,
+      "CITY_int": 446
+    },
+    {
+      "CITY": "Zhympity",
+      "LATITUDE": 50.25919385228,
+      "LONGITUDE": 52.592824078088,
+      "CITY_int": 447
+    },
+    {
+      "CITY": "aul_Besagash",
+      "LATITUDE": 42.810638,
+      "LONGITUDE": 71.432073,
+      "CITY_int": 448
+    },
+    {
+      "CITY": "ekibastuz",
+      "LATITUDE": 51.72400617441302,
+      "LONGITUDE": 75.31742075723372,
+      "CITY_int": 449
+    },
+    {
+      "CITY": "im__Kasyma_Kaysenova",
+      "LATITUDE": 49.75765577964888,
+      "LONGITUDE": 81.53053842442228,
+      "CITY_int": 450
+    },
+    {
+      "CITY": "im__Turara_Ryskulova",
+      "LATITUDE": 42.534355313816654,
+      "LONGITUDE": 70.35177305684827,
+      "CITY_int": 451
+    },
+    {
+      "CITY": "mkr_Vodnik-1",
+      "LATITUDE": 43.39752196586766,
+      "LONGITUDE": 76.84428343401306,
+      "CITY_int": 452
+    },
+    {
+      "CITY": "mkr_Vodnik-2",
+      "LATITUDE": 43.35790735337891,
+      "LONGITUDE": 76.89711410132166,
+      "CITY_int": 453
+    },
+    {
+      "CITY": "p_Aktau",
+      "LATITUDE": 50.21367766251587,
+      "LONGITUDE": 73.06237388598007,
+      "CITY_int": 454
+    }
+  ]
+}

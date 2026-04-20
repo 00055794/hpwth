@@ -1,0 +1,295 @@
+{
+  "Abayskaya_obl_": {
+    "blp_median": 352273.0,
+    "blp_mean": 366864.0,
+    "blp_std": 1004695.0,
+    "blp_p25": 301724.0,
+    "blp_p75": 410397.0,
+    "count": 27493
+  },
+  "Abayskiy_r-n": {
+    "blp_median": 406499.0,
+    "blp_mean": 429304.0,
+    "blp_std": 143811.0,
+    "blp_p25": 350000.0,
+    "blp_p75": 485714.0,
+    "count": 4755
+  },
+  "Akmolinskaya_obl_": {
+    "blp_median": 312500.0,
+    "blp_mean": 326540.0,
+    "blp_std": 1455956.0,
+    "blp_p25": 271429.0,
+    "blp_p75": 362563.0,
+    "count": 43473
+  },
+  "Aktyubinskaya_obl_": {
+    "blp_median": 311576.0,
+    "blp_mean": 316088.0,
+    "blp_std": 91647.0,
+    "blp_p25": 265534.0,
+    "blp_p75": 361842.0,
+    "count": 80956
+  },
+  "Alatauskiy_r-n": {
+    "blp_median": 553191.0,
+    "blp_mean": 561272.0,
+    "blp_std": 100596.0,
+    "blp_p25": 500000.0,
+    "blp_p75": 612676.0,
+    "count": 28487
+  },
+  "Almalinskiy_r-n": {
+    "blp_median": 731707.0,
+    "blp_mean": 768102.0,
+    "blp_std": 201022.0,
+    "blp_p25": 632432.0,
+    "blp_p75": 858974.0,
+    "count": 61755
+  },
+  "Almatinskaya_obl_": {
+    "blp_median": 427907.0,
+    "blp_mean": 456102.0,
+    "blp_std": 2663547.0,
+    "blp_p25": 366667.0,
+    "blp_p75": 506849.0,
+    "count": 25229
+  },
+  "Almaty_r-n": {
+    "blp_median": 442857.0,
+    "blp_mean": 467956.0,
+    "blp_std": 127235.0,
+    "blp_p25": 395349.0,
+    "blp_p75": 508571.0,
+    "count": 77000
+  },
+  "Aly-Farabiyskiy_r-n": {
+    "blp_median": 404676.0,
+    "blp_mean": 421826.0,
+    "blp_std": 117265.0,
+    "blp_p25": 352423.0,
+    "blp_p75": 470588.0,
+    "count": 9533
+  },
+  "Atyrauskaya_obl_": {
+    "blp_median": 361702.0,
+    "blp_mean": 384387.0,
+    "blp_std": 129737.0,
+    "blp_p25": 306682.0,
+    "blp_p75": 439655.0,
+    "count": 31219
+  },
+  "Auezovskiy_r-n": {
+    "blp_median": 651786.0,
+    "blp_mean": 665826.0,
+    "blp_std": 143702.0,
+    "blp_p25": 583333.0,
+    "blp_p75": 728972.0,
+    "count": 55881
+  },
+  "Bostandykskiy_r-n": {
+    "blp_median": 826923.0,
+    "blp_mean": 857882.0,
+    "blp_std": 231381.0,
+    "blp_p25": 722222.0,
+    "blp_p75": 948379.0,
+    "count": 121715
+  },
+  "Enbekshinskiy_r-n": {
+    "blp_median": 396040.0,
+    "blp_mean": 405178.0,
+    "blp_std": 100364.0,
+    "blp_p25": 352273.0,
+    "blp_p75": 446429.0,
+    "count": 8884
+  },
+  "Esilyskiy_r-n": {
+    "blp_median": 555556.0,
+    "blp_mean": 602808.0,
+    "blp_std": 4852592.0,
+    "blp_p25": 481081.0,
+    "blp_p75": 645646.0,
+    "count": 93037
+  },
+  "Karagandinskaya_obl_": {
+    "blp_median": 331250.0,
+    "blp_mean": 338990.0,
+    "blp_std": 201346.0,
+    "blp_p25": 242826.0,
+    "blp_p75": 408000.0,
+    "count": 110251
+  },
+  "Karatauskiy_r-n": {
+    "blp_median": 451613.0,
+    "blp_mean": 476015.0,
+    "blp_std": 123418.0,
+    "blp_p25": 393701.0,
+    "blp_p75": 526786.0,
+    "count": 12787
+  },
+  "Kostanayskaya_obl_": {
+    "blp_median": 362319.0,
+    "blp_mean": 359175.0,
+    "blp_std": 119316.0,
+    "blp_p25": 310559.0,
+    "blp_p75": 411184.0,
+    "count": 76702
+  },
+  "Kyzylordinskaya_obl_": {
+    "blp_median": 242588.0,
+    "blp_mean": 281153.0,
+    "blp_std": 2847938.0,
+    "blp_p25": 200000.0,
+    "blp_p75": 294118.0,
+    "count": 8458
+  },
+  "Mangistauskaya_obl_": {
+    "blp_median": 304976.0,
+    "blp_mean": 319134.0,
+    "blp_std": 106953.0,
+    "blp_p25": 257143.0,
+    "blp_p75": 361184.0,
+    "count": 43613
+  },
+  "Medeuskiy_r-n": {
+    "blp_median": 845758.0,
+    "blp_mean": 876552.0,
+    "blp_std": 309453.0,
+    "blp_p25": 666667.0,
+    "blp_p75": 1001462.0,
+    "count": 33821
+  },
+  "Nauryzbayskiy_r-n": {
+    "blp_median": 547619.0,
+    "blp_mean": 567911.0,
+    "blp_std": 172020.0,
+    "blp_p25": 477778.0,
+    "blp_p75": 630952.0,
+    "count": 34634
+  },
+  "Nura_r-n": {
+    "blp_median": 537143.0,
+    "blp_mean": 574272.0,
+    "blp_std": 3335798.0,
+    "blp_p25": 452381.0,
+    "blp_p75": 628205.0,
+    "count": 27389
+  },
+  "Pavlodarskaya_obl_": {
+    "blp_median": 343119.0,
+    "blp_mean": 349143.0,
+    "blp_std": 1404651.0,
+    "blp_p25": 278638.0,
+    "blp_p75": 398438.0,
+    "count": 46629
+  },
+  "Sarayshyk_r-n": {
+    "blp_median": 502737.0,
+    "blp_mean": 527995.0,
+    "blp_std": 131265.0,
+    "blp_p25": 441402.0,
+    "blp_p75": 592982.0,
+    "count": 2334
+  },
+  "Saryarka_r-n": {
+    "blp_median": 414743.0,
+    "blp_mean": 428060.0,
+    "blp_std": 94335.0,
+    "blp_p25": 371853.0,
+    "blp_p75": 468085.0,
+    "count": 35048
+  },
+  "Severo-Kazahstanskaya_obl_": {
+    "blp_median": 375000.0,
+    "blp_mean": 381494.0,
+    "blp_std": 98342.0,
+    "blp_p25": 332536.0,
+    "blp_p75": 421429.0,
+    "count": 19187
+  },
+  "Turan_r-n": {
+    "blp_median": 411765.0,
+    "blp_mean": 427774.0,
+    "blp_std": 104741.0,
+    "blp_p25": 361111.0,
+    "blp_p75": 481928.0,
+    "count": 3396
+  },
+  "Turkestanskaya_obl_": {
+    "blp_median": 267696.0,
+    "blp_mean": 286578.0,
+    "blp_std": 224391.0,
+    "blp_p25": 207039.0,
+    "blp_p75": 337830.0,
+    "count": 6522
+  },
+  "Turksibskiy_r-n": {
+    "blp_median": 552486.0,
+    "blp_mean": 555427.0,
+    "blp_std": 116793.0,
+    "blp_p25": 490164.0,
+    "blp_p75": 615079.0,
+    "count": 14948
+  },
+  "Ulytauskaya_obl_": {
+    "blp_median": 300000.0,
+    "blp_mean": 304957.0,
+    "blp_std": 93331.0,
+    "blp_p25": 244444.0,
+    "blp_p75": 356164.0,
+    "count": 12038
+  },
+  "Vostochno-Kazahstanskaya_obl_": {
+    "blp_median": 371711.0,
+    "blp_mean": 380311.0,
+    "blp_std": 1302466.0,
+    "blp_p25": 313199.0,
+    "blp_p75": 430556.0,
+    "count": 43281
+  },
+  "Zapadno-Kazahstanskaya_obl_": {
+    "blp_median": 330189.0,
+    "blp_mean": 337253.0,
+    "blp_std": 86246.0,
+    "blp_p25": 287097.0,
+    "blp_p75": 379747.0,
+    "count": 40182
+  },
+  "Zhambylskaya_obl_": {
+    "blp_median": 289855.0,
+    "blp_mean": 299966.0,
+    "blp_std": 86299.0,
+    "blp_p25": 253333.0,
+    "blp_p75": 337079.0,
+    "count": 34395
+  },
+  "Zhetysuskaya_obl_": {
+    "blp_median": 315385.0,
+    "blp_mean": 318923.0,
+    "blp_std": 76375.0,
+    "blp_p25": 275862.0,
+    "blp_p75": 357143.0,
+    "count": 18259
+  },
+  "Zhetysuskiy_r-n": {
+    "blp_median": 566802.0,
+    "blp_mean": 577204.0,
+    "blp_std": 113589.0,
+    "blp_p25": 507442.0,
+    "blp_p75": 637500.0,
+    "count": 13396
+  },
+  "r-n_Baykonur": {
+    "blp_median": 416667.0,
+    "blp_mean": 426460.0,
+    "blp_std": 88399.0,
+    "blp_p25": 375000.0,
+    "blp_p75": 468212.0,
+    "count": 17122
+  },
+  "_national": {
+    "blp_median": 425926.0,
+    "blp_std": 1530176.0,
+    "count": 1323809
+  }
+}
