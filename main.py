@@ -11,6 +11,7 @@ The model receives only the features listed in nn_model/feature_list.json
 (currently 13; upgrades to 47 after running scripts/save_artifacts.py).
 """
 import io
+import math
 import os
 from pathlib import Path
 from contextlib import asynccontextmanager
@@ -148,7 +149,8 @@ async def batch_predict(file: UploadFile = File(...)):
         if file.filename and file.filename.lower().endswith(".xlsx"):
             df = pd.read_excel(io.BytesIO(contents))
         else:
-            df = pd.read_csv(io.StringIO(contents.decode("utf-8", errors="replace")))
+            df = pd.read_csv(io.StringIO(contents.decode("utf-8", errors="replace")),
+                             comment='#')
     except Exception as exc:
         raise HTTPException(status_code=400, detail=f"Cannot parse file: {exc}") from exc
 
@@ -163,6 +165,8 @@ async def batch_predict(file: UploadFile = File(...)):
             user_input = {c: row[c] for c in REQUIRED_COLS}
             features_df = _pipeline.assemble(user_input)
             price_per_sqm = float(_nn.predict_kzt(features_df)[0])
+            if not math.isfinite(price_per_sqm):
+                continue
             price_kzt     = price_per_sqm * float(row["TOTAL_AREA"])
             rec: dict[str, Any] = {c: (None if pd.isna(row[c]) else
                                         int(row[c]) if isinstance(row[c], (int,)) else
