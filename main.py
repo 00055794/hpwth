@@ -140,11 +140,11 @@ REQUIRED_COLS = ["ROOMS", "LATITUDE", "LONGITUDE", "TOTAL_AREA", "FLOOR",
 
 
 @app.post("/batch")
-def batch_predict(file: UploadFile = File(...)):
+async def batch_predict(file: UploadFile = File(...)):
     if _pipeline is None or _nn is None:
         raise HTTPException(status_code=503, detail="Model not loaded yet.")
     try:
-        contents = file.file.read()
+        contents = await file.read()
         if file.filename and file.filename.lower().endswith(".xlsx"):
             df = pd.read_excel(io.BytesIO(contents))
         else:
