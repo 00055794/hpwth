@@ -139,16 +139,22 @@ REQUIRED_COLS = ["ROOMS", "LATITUDE", "LONGITUDE", "TOTAL_AREA", "FLOOR",
                  "TOTAL_FLOORS", "FURNITURE", "CONDITION", "MATERIAL", "YEAR"]
 
 
+import base64
+
+class BatchUploadInput(BaseModel):
+    filename: str
+    data: str  # base64-encoded file content
+
 @app.post("/batch")
-async def batch_predict(file: UploadFile = File(...)):
+async def batch_predict(payload: BatchUploadInput):
     if _pipeline is None or _nn is None:
         raise HTTPException(status_code=503, detail="Model not loaded yet.")
     try:
-        contents = await file.read()
-        if file.filename and file.filename.lower().endswith(".xlsx"):
-            df = pd.read_excel(io.BytesIO(contents))
+        raw = base64.b64decode(payload.data)
+        if payload.filename.lower().endswith(".xlsx"):
+            df = pd.read_excel(io.BytesIO(raw))
         else:
-            df = pd.read_csv(io.StringIO(contents.decode("utf-8", errors="replace")))
+            df = pd.read_csv(io.StringIO(raw.decode("utf-8", errors="replace")))
     except Exception as exc:
         raise HTTPException(status_code=400, detail=f"Cannot parse file: {exc}") from exc
 
@@ -156,7 +162,7 @@ async def batch_predict(file: UploadFile = File(...)):
     if missing:
         raise HTTPException(status_code=400, detail=f"Missing columns: {missing}")
 
-    df = df.head(200)  # safety cap
+    df = df.head(200)
     results: list[dict[str, Any]] = []
     for _, row in df.iterrows():
         try:
