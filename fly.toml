@@ -1,3 +1,8 @@
+# fly.toml app configuration file generated for hpwt on 2026-04-21T06:42:19Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
 app = "hpwt"
 primary_region = "iad"
 
