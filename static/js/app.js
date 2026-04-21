@@ -203,12 +203,23 @@ async function handleBatchUpload() {
   hide("batch-results");
   show("batch-loading");
   document.querySelector("#batch-loading .loading-text").textContent = "Waking up service\u2026";
-  const fd = new FormData();
-  fd.append("file", file);
+
+  // Read file as Base64
+  const base64 = await new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(",")[1]); // strip data: prefix
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+
   try {
     await waitForService();
     document.querySelector("#batch-loading .loading-text").textContent = "Processing batch\u2026";
-    const resp = await fetch("/batch", { method: "POST", body: fd });
+    const resp = await fetch("/batch", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ filename: file.name, data: base64 }),
+    });
     if (!resp.ok) {
       const e = await resp.json().catch(() => ({ detail: resp.statusText }));
       throw new Error(e.detail);
