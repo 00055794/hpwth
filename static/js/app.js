@@ -221,7 +221,6 @@ async function handleBatchUpload() {
   } catch (err) {
     alert("Batch error: " + err.message);
   } finally {
-    if (loadingText) loadingText.textContent = "Processing batch\u2026";
     hide("batch-loading");
   }
 }
