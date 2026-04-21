@@ -127,6 +127,7 @@ async function runPredict() {
   setLoadingSingle(true);
   hide("error-card");
   try {
+    await waitForService();
     const resp = await fetch("/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -176,14 +177,38 @@ function renderSingleResult(data, p) {
 }
 
 // ── Batch upload ──────────────────────────────────────────────
+
+// Poll /health until the service responds 200 or the timeout elapses.
+// Render free-tier services sleep after inactivity and return 403 on POST
+// during cold-start; a prior GET to /health wakes the instance first.
+async function waitForService(timeoutMs = 30000, intervalMs = 2000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      const r = await fetch("/health");
+      if (r.ok) return true;
+    } catch (_) { /* network error – keep waiting */ }
+    await new Promise(res => setTimeout(res, intervalMs));
+  }
+  return false;
+}
+
 async function handleBatchUpload() {
   const file = document.getElementById("batch-file").files[0];
   if (!file) return;
   hide("batch-results");
   show("batch-loading");
+  const loadingText = document.querySelector("#batch-loading .loading-text");
   const fd = new FormData();
   fd.append("file", file);
   try {
+    // Wake the service before attempting the upload so Render's cold-start
+    // 403 does not abort the request.
+    if (loadingText) loadingText.textContent = "Waking up service\u2026";
+    const ready = await waitForService();
+    if (!ready) throw new Error("Service is not responding – please try again later.");
+
+    if (loadingText) loadingText.textContent = "Processing batch\u2026";
     const resp = await fetch("/batch", { method: "POST", body: fd });
     if (!resp.ok) {
       const e = await resp.json().catch(() => ({ detail: resp.statusText }));
