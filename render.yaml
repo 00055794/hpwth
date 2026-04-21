@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hpwth
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: YANDEX_MAPS_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        # Comma-separated list of allowed origins, or * to allow all.
+        # Example: https://hp1-4wo3.onrender.com
+        value: "*"

@@ -18,6 +18,7 @@ from typing import Any
 
 from fastapi import FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.encoders import jsonable_encoder
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -27,6 +28,7 @@ import uvicorn
 
 BASE_DIR   = Path(__file__).resolve().parent
 YANDEX_KEY = os.getenv("YANDEX_MAPS_API_KEY", "")
+CORS_ORIGINS = [o.strip() for o in os.getenv("CORS_ORIGINS", "*").split(",") if o.strip()]
 
 # -- Global resources (loaded once at startup) ---------------------------------
 _pipeline = None
@@ -52,6 +54,13 @@ async def lifespan(app: FastAPI):
 
 # -- App -----------------------------------------------------------------------
 app = FastAPI(title="KZ House Price Estimator", lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=CORS_ORIGINS,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
@@ -131,11 +140,11 @@ REQUIRED_COLS = ["ROOMS", "LATITUDE", "LONGITUDE", "TOTAL_AREA", "FLOOR",
 
 
 @app.post("/batch")
-def batch_predict(file: UploadFile = File(...)):
+async def batch_predict(file: UploadFile = File(...)):
     if _pipeline is None or _nn is None:
         raise HTTPException(status_code=503, detail="Model not loaded yet.")
     try:
-        contents = file.file.read()
+        contents = await file.read()
         if file.filename and file.filename.lower().endswith(".xlsx"):
             df = pd.read_excel(io.BytesIO(contents))
         else:
