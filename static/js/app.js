@@ -107,6 +107,20 @@ function setLocation(lat, lon) {
   singleMarker?.setLatLng([lat, lon]);
 }
 
+// ── Wake-up helper ────────────────────────────────────────────
+async function waitForService() {
+  const MAX_MS = 30000;
+  const POLL_MS = 2000;
+  const deadline = Date.now() + MAX_MS;
+  while (Date.now() < deadline) {
+    try {
+      const r = await fetch("/health");
+      if (r.ok) return;
+    } catch (_) {}
+    await new Promise(res => setTimeout(res, POLL_MS));
+  }
+}
+
 // ── Single prediction ─────────────────────────────────────────
 async function runPredict() {
   const payload = {
@@ -124,9 +138,11 @@ async function runPredict() {
   if (isNaN(payload.LATITUDE) || isNaN(payload.LONGITUDE)) {
     showError("Enter valid coordinates or click on the map."); return;
   }
-  setLoadingSingle(true);
+  setLoadingSingle(true, "Waking up service\u2026");
   hide("error-card");
   try {
+    await waitForService();
+    setLoadingSingle(true, "Calculating\u2026");
     const resp = await fetch("/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -145,11 +161,16 @@ async function runPredict() {
   }
 }
 
-function setLoadingSingle(on) {
+function setLoadingSingle(on, msg) {
   const btn = document.getElementById("predict-btn");
   btn.disabled    = on;
   btn.textContent = on ? "Calculating..." : "Predict Price";
-  on ? show("loading-card") : hide("loading-card");
+  if (on) {
+    document.querySelector("#loading-card .loading-text").textContent = msg || "Calculating\u2026";
+    show("loading-card");
+  } else {
+    hide("loading-card");
+  }
 }
 
 function renderSingleResult(data, p) {
@@ -181,9 +202,12 @@ async function handleBatchUpload() {
   if (!file) return;
   hide("batch-results");
   show("batch-loading");
+  document.querySelector("#batch-loading .loading-text").textContent = "Waking up service\u2026";
   const fd = new FormData();
   fd.append("file", file);
   try {
+    await waitForService();
+    document.querySelector("#batch-loading .loading-text").textContent = "Processing batch\u2026";
     const resp = await fetch("/batch", { method: "POST", body: fd });
     if (!resp.ok) {
       const e = await resp.json().catch(() => ({ detail: resp.statusText }));
