@@ -37,7 +37,13 @@ class OSMDistances:
             self._available = False
             return
 
-        df = pd.read_parquet(parquet_path)
+        try:
+            df = pd.read_parquet(parquet_path)
+        except Exception as exc:
+            print(f"[WARN] Could not read {parquet_path.name}: {exc} -- distances will return NaN")
+            self._grid: dict = {}
+            self._available = False
+            return
         # Build dict: (lat_key, lon_key) -> [d1, d2, d3, d4, d5, d6]
         # lat_key / lon_key are integers = round(coord / GRID_STEP)
         arr = df[DISTANCE_COLS].values.astype(np.float32)
